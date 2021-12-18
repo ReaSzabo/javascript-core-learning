@@ -29,7 +29,7 @@
       console.log(array[index]);
 
 
-      // Gyakran használ trükk az utolsó elem kiírására.
+      // Gyakran használt trükk az utolsó elem kiírására.
       // Meg tudod mondani, hogy miért így csináljuk?
       
       var utolsoIndex = array.length - 1;
@@ -45,43 +45,67 @@
       //    c. Megadunk egy utasítást, ami mozgatja a ciklust.
       
 
+      // Ötször "valami"
       console.log("For ciklus 1:");
       for(var n = 0; n < 5; n = n + 1) {
         console.log("valami");
       }
 
+      // Az index leggyakrabban i-betűvel van jelölve.
+
       /*
+      // 0-tól 4-ig
       console.log("For ciklus 2: ");
       for(var i = 0; i < 5; i = i + 1) {
         console.log(i);
       }
 
+      // 0-tól 9-ig
       console.log("For ciklus 3: ");
       for(var i = 0; i < 10; i = i + 1) {
         console.log(i);
       }
 
+      // 0-tól 2-ig
       console.log("For ciklus 4:");
       for(var i = 0; i < 3; i = i + 1) {
         console.log("Index: " + i);
       }
 
+      // az öt többszörösei: 0, 5, 10, 15 ....
       console.log("For ciklus 5:");
       for(var i = 0; i < 10; i = i + 1) {
         console.log(i * 5);
       }
 
-
+      // minden második szám, 10 alatt
       console.log("For ciklus 6:");
       for(var i = 0; i < 10; i = i + 2) {
         console.log(i);
       }
 
+      // a számok négyzetei
       console.log("For ciklus 7:");
       for(var i = 0; i < 4; i = i + 1) {
         console.log(i * i);
       }
+
+      // a tömb elemei
+      var szamok = [4, 2, 6, 8, 9];
+      console.log("For ciklus 8:");
+      for(var i = 0; i < 5; i = i + 1) {
+        console.log(szamok[i]);
+      }
+
+      // a tömb elemei v2
+      var szamok2 = [5, 14, 12, 16, 18, 19];
+      console.log("For ciklus 8:");
+      for(var i = 0; i < szamok.length - 1; i = i + 1) {
+        console.log(szamok[i]);
+      }
+
       */
+
 
       // Egy hasznos rövidítés
       // i = i + 1;
