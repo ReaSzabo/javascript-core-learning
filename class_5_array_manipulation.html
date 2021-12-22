@@ -50,6 +50,39 @@
       tomb3 = [1, 2, 3, 4];
       console.log(tomb3); // [1, 2, 3, 4]
 
+
+
+      // Meg tudjuk vizsgálni, hogy a tömbnek eleme-e vajon egy adott érték.
+      // Ehhez az includes() metódust használjuk.
+      var tomb4 = [1, 5, 8, 9];
+      
+      console.log( tomb4.includes(1) ) // azt írja ki, true
+      console.log( tomb4.includes(2) ) // azt írja ki, false
+      console.log( tomb4.includes(5) ) // azt írja ki, true
+      console.log( tomb4.includes(6) ) // azt írja ki, false
+      console.log( tomb4.includes(8) ) // azt írja ki, true
+
+      
+      var etelek = ["kenyér", "sajt", "rizs", "tészta", "tojás"];
+
+      console.log( etelek.includes("kenyér") ) // azt írja ki, true
+      console.log( etelek.includes("császármorzsa") ) // azt írja ki, false
+      console.log( etelek.includes("sajt") ) // azt írja ki, true
+      console.log( etelek.includes("tészta") ) // azt írja ki, true
+      console.log( etelek.includes("bulgur") ) // azt írja ki, false
+
+
+      
+      // Ha olyan nyert, aki nem tud főzni, akkor írd ki: "Aaa, gecibe!" !
+      var tudFozni = ["Roland", "Timi"];
+      var nemTudFozni = ["Győző", "Annácska", "Rómeó"];
+
+      var nyertes = "Győző";
+
+      if(nemTudFozni.includes(nyertes)) {
+        console.log("Aaa, gecibe!")
+      }
+
     </script>
   </body>
 </html>
