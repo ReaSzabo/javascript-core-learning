@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script>
+
+      // A tömbökhöz hozzá tudunk adni új elemeket.
+      // Az új elemek a tömb "végére" kerülnek.
+
+      // Létrehozunk egy tömböt.
+      var tomb = [1, 2, 3];
+
+      // Hozzáadunk egy új elemet.
+      // A push metódust használjuk és zárójelbe írjuk, hogy mit akarunk beletenni a tömbbe.
+      tomb.push(4);
+      console.log(tomb); // ezt fogja kiírni: [1, 2, 3, 4]
+
+      tomb.push(5);
+      console.log(tomb); // ezt fogja kiírni: [1, 2, 3, 4, 5]
+
+
+
+
+      // A tömb utolsó elemét el is tudjuk távolítani.
+      // Ehhez a pop metódust használjuk.
+      var tomb2 = [10, 11, 12];
+      
+      tomb2.pop();
+      console.log(tomb2); // [10, 11]
+
+      tomb2.pop();
+      console.log(tomb2); // [10]
+
+      tomb2.pop();
+      console.log(tomb2); // []
+
+      // Ha üres a tömb, akkor a pop() nem csinál semmit, mert nem tud kivenni semmit.
+      tomb2.pop();
+      console.log(tomb2); // []
+
+
+
+      // Egy tömbnek adhatunk új értet is.
+      var tomb3 = [1, 2];
+
+      tomb3 = [];
+      console.log(tomb3); // []
+      
+      tomb3 = [1, 2, 3, 4];
+      console.log(tomb3); // [1, 2, 3, 4]
+
+    </script>
+  </body>
+</html>
