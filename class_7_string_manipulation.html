@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script>
+
+      /////////////// REPLACE /////////////////
+
+      // A replace metódust, akkor használjuk, ha szeretnénk szeretnénk kicserélni egy substringet egy stringben.
+      // A replaceAll() metódust használjuk erre a célra.
+      // Két paramétere van:
+      // 1. Milyen substringet cseréljünk ki.
+      // 2. Mire cseréljük ki.
+
+      var originalString = "sörös";
+
+      var replacedString = originalString.replaceAll("ö", "o"); // Minden "ö" karaktert kicserél "o karakterra."
+      console.log(replacedString); // "Soros"
+
+      // Vegyük észre, hogy a replaceAll metódussal módosított eredeti változó nem változik meg.
+      // Értékül kell adnunk egy másik stringnek vagy akár önmagának.
+      
+      // Nem elég:
+      var greetings = "Szevasz";
+      greetings.replaceAll("e","i");
+      console.log(greetings); // Szevasz
+      
+      // Helyesen:
+      var greetings2 = "Szevasz";
+      greetings2 = greetings2.replaceAll("e","i");
+      console.log(greetings2); // Szivasz
+
+      // Nem csak egy betűt cserélhetünk ki, hanem hosszabb substringet is.
+      var longGreetings = "Jó reggelt, Máté!";
+      longGreetings = longGreetings.replaceAll("Máté", "Andi");
+      console.log(longGreetings); // Jó reggelt, Andi!
+      
+
+    </script>
+  </body>
+</html>
