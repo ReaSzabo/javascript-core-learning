@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script>
+
+      // forrás: 
+      // https://www.youtube.com/watch?v=s9wW2PpJsmQ
+
+      // Szeretnénk kiírni egy 9 elemű tömb elemeit.
+      var tomb = [1, 2, 4, 6, 8, 5, 0, 9, 8];
+
+      console.log(tomb[0]); // 1
+      console.log(tomb[1]); // 2
+      console.log(tomb[2]); // 4
+      console.log(tomb[3]); // 6
+      console.log(tomb[4]); // 8
+      console.log(tomb[5]); // 5
+      console.log(tomb[6]); // 0
+      console.log(tomb[7]); // 9
+      console.log(tomb[8]); // 8
+
+      // Itt látjuk, hogy ismétlődik a kód.
+      // A sorokban van egy közös rész, csak egy számsorozat változik.
+      // A különbség nevezetesen a tömb indexe, azaz, hogy hanyadik elemét szeretnénk kiírni.
+
+      // A programozásban mindíg a spórolásra kell rámenni.
+      // Ha a 1000 elemű lenne a tömb, akkor 1000 sor lenne.
+
+      // Például itt jön a képbe a for ciklus.
+      // Könnyen be tudjuk állítani, hogy hányszor csináljon meg valamit.
+      // Viszont nincs rá mód, hogy azt mondjuk, hogy "csináld meg 5x", "csináld meg 1000X".
+      // A kódban ezt azzal helyettesítjük, hogy "számolj el 1000-ig, és minden számnál csinálj valamit".
+      // Ez gyakran azért hasznos, mert tudjuk mennyinél jár, és azt a számot fel tudjuk használni.
+
+      // Pl: számolj el 0-tól 4-ig.
+      // 0,1,2,3,4
+      // Ezek a számok pont jók arra is, hogy kiírassuk a 0., 1., 2., 3., 4. elemet.
+
+
+      // A for ciklus 3 paramétere: 
+      // for (innen kezdjük, eddig megyünk, ennyit lépünk)
+      for (var n = 0; n < 5; n = n + 1) {
+        console.log(n);
+      }
+
+      // ÚJ INFÓ
+      // Modulus vagyis maradékos osztás
+      // Egy számot elosztunk valamennyivel, majd marad a maradék.
+      // 4-ben a 2 megvan 2-szer. A maradék 0. Azaz 4 % 2 egyenlő 0
+      // 5-ben a 2 megvan 2-szer. A maradék 1. Azaz 5 % 2 egyenlő 1
+      // 4-ben a 3 megvan 1-szer. A maradék 1. Azaz 4 % 3 egyenlő 1
+      // 11-ben a 8 megvan 1-szer. A maradék 3. Azaz 11 % 3 egyenlő 3
+
+      // Szeretném kiírni a számokat 1-től 10-ig.
+      for(var i = 1; i < 11; i++) {
+        console.log(i);
+      }
+      
+      // Szeretném kiírni a páros számokat 1-től 10-ig.
+      for(var i = 1; i < 11; i++) {
+        if(i % 2 == 0) {
+          console.log(i);
+        }
+      }
+      
+      // Szeretném kiírni a páratlan számokat 1-től 10-ig.
+      for(var i = 1; i < 11; i++) {
+        if(i % 2 != 0) {
+          console.log(i);
+        }
+      }
+      
+      // Szeretném kiírni a számokat 10-től 1-ig.
+      for(var i = 10; i > 0; i--) {
+        console.log(i);
+      }
+
+      var tombocske = [1,5,3,5,7,8,5,4,3,2,11,33,55,66,7,77,88];
+
+      // Írd ki a tömb minden második elemét. Tehát 0. elem, 2. elem, 4. elem ...
+      console.log("Teszt 1");
+      for(var i = 0; i < tombocske.length; i = i + 2) {
+        console.log(tombocske[i]);
+      }
+
+      // Ugyanaz csak maradékkal
+      console.log("Teszt 2");
+      for(var i = 0; i < tombocske.length; i++) {
+        if(i % 2 == 0) {
+          console.log(tombocske[i]);
+        }
+      }
+
+      // Írd ki csak a páros számokat
+      console.log("Teszt 3");
+      for(var i = 0; i < tombocske.length; i++) {
+        if(tombocske[i] % 2 == 0) {
+          console.log(tombocske[i]);
+        }
+      }
+
+      // Írd ki csak a páratlan számokat
+      console.log("Teszt 4");
+      for(var i = 0; i < tombocske.length; i++) {
+        if(tombocske[i] % 2 == 1) {
+          console.log(tombocske[i]);
+        }
+      }
+
+      // Írd ki a tömb minden elemét, de ha páros a szám, akkor a kétszeresét. 
+      // Tehát a 0. elem, 2. elem, 4. elem kétszeresét. Az 1. elem, 2. elem, 5. elem eredeti értékét.
+      console.log("Teszt 5");
+      for(var i = 0; i < tombocske.length; i++) {
+        if(tombocske[i] % 2 == 0) {
+          console.log(tombocske[i] * 2);
+        } else {
+          console.log(tombocske[i]);
+        }
+      }
+
+    </script>
+  </body>
+</html>
