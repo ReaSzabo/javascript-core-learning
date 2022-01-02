@@ -4,8 +4,7 @@
   </head>
   <body>
     <script>
-
-      /////////////// REPLACE /////////////////
+      /////////////// REPLACE ALL /////////////////
 
       // A replace metódust, akkor használjuk, ha szeretnénk szeretnénk kicserélni egy substringet egy stringben.
       // A replaceAll() metódust használjuk erre a célra.
@@ -16,27 +15,34 @@
       var originalString = "sörös";
 
       var replacedString = originalString.replaceAll("ö", "o"); // Minden "ö" karaktert kicserél "o karakterra."
-      console.log(replacedString); // "Soros"
+      console.log(replacedString); // "soros"
 
       // Vegyük észre, hogy a replaceAll metódussal módosított eredeti változó nem változik meg.
       // Értékül kell adnunk egy másik stringnek vagy akár önmagának.
-      
+
       // Nem elég:
       var greetings = "Szevasz";
-      greetings.replaceAll("e","i");
+      greetings.replaceAll("e", "i");
       console.log(greetings); // Szevasz
-      
+
       // Helyesen:
       var greetings2 = "Szevasz";
-      greetings2 = greetings2.replaceAll("e","i");
+      greetings2 = greetings2.replaceAll("e", "i");
       console.log(greetings2); // Szivasz
 
       // Nem csak egy betűt cserélhetünk ki, hanem hosszabb substringet is.
       var longGreetings = "Jó reggelt, Máté!";
       longGreetings = longGreetings.replaceAll("Máté", "Andi");
       console.log(longGreetings); // Jó reggelt, Andi!
-      
 
+      // Egy tömb összes elemén használhatjuk a replaceAll funkciót.
+      // Minden "alma" string részletet kicserélünk "meggy"-re.
+      var tombocske = ["almafa", "almamoly", "almalekvár", "almapálinka", "vadalma"];
+      for(var i = 0; i < tombocske.length; i = i + 1) {
+        tombocske[i] = tombocske[i].replaceAll("alma", "meggy")
+      }
+
+      var
     </script>
   </body>
 </html>
