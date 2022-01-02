@@ -32,6 +32,21 @@
       var ujString3 = "Vágod" + " Csótány?"; // Vágod Csótány?
 
 
+
+      // Fűzzük össze egy tömb elemeit!
+      var szavak = ["A ", "kis ", "Vuk "];
+
+      // A szavakat egy "mondat" változóban fogjuk egyesíteni.
+      var mondat = ""; // Először legyen az értéke üres string.
+
+      for(var i = 0; i < szavak.length; i++) {
+        mondat = mondat + szavak[i];
+      }
+
+      console.log(mondat);
+
+      // Mi van, ha a nincs space a szavak végén?
+
       /////////////// CHARACTER AT /////////////////
 
       // Vehetjük egy string valahanyadik karakterét.
