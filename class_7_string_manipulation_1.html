@@ -32,18 +32,25 @@
       var ujString3 = "Vágod" + " Csótány?"; // Vágod Csótány?
 
 
-      /////////////// CHARACTER /////////////////
+      /////////////// CHARACTER AT /////////////////
 
       // Vehetjük egy string valahanyadik karakterét.
       // Ehhez a charAt() metódust használjuk.
       var myString = "Andi sminkel."
 
-      console.log(myString.charAt(0)); // A
-      console.log(myString.charAt(1)); // n
-      console.log(myString.charAt(2)); // d
-      console.log(myString.charAt(3)); // i
-      console.log(myString.charAt(4)); // itt egy spacet ír ki
-      console.log(myString.charAt(5)); // s
+      console.log(myString.charAt(0)); // "A"
+      console.log(myString.charAt(1)); // "n"
+      console.log(myString.charAt(2)); // "d"
+      console.log(myString.charAt(3)); // "i"
+      console.log(myString.charAt(4)); // " " - itt egy space-t ír ki
+      console.log(myString.charAt(5)); // "s"
+      console.log(myString.charAt(6)); // "m"
+      console.log(myString.charAt(7)); // "i"
+      console.log(myString.charAt(8)); // "n"
+      console.log(myString.charAt(9)); // "k"
+      console.log(myString.charAt(10)); // "e"
+      console.log(myString.charAt(11)); // "l"
+      console.log(myString.charAt(12)); // "."
 
       // Írjuk ki az utolsó karaktert.
       // A string hossza 13, az utolsó elem a 12-ik.
@@ -61,10 +68,10 @@
       
       // Meghatározhatjuk, hogy a string mely részére van szükségünk.
       // A string egy darabját/részét substring-nek nevezzük.
-      // pl. az "and" string lehetséges substringjei: "", "A", "n", "d", "an", "nd", "and".
+      // pl. az "and" string lehetséges substringjei: "", "a", "n", "d", "an", "nd", "and".
 
       // A substring levágásához a substring() metódust használjuk.
-      // Két paramétere van, az első elem és az utolsó elem. 
+      // Két paramétere van, az első elem és az utolsó elem. Szóva, hogy hanyadik betűtől, hanyadik betűig tartson a substring.
       // Pl. "Andika".substring(0,4)
       // Ebben az esetben a string 0. karakterétől a 4. karakteréig vágjuk le a substringet.
       // A 0. elem: A.
