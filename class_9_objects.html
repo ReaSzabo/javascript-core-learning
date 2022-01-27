@@ -1,0 +1,212 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script>
+
+      /***************************************************/
+      /************* Primitív adattípusok ****************/
+      /***************************************************/
+      // angolul primitive types
+
+
+      ////////// BOOLEAN TÍPUS ///////////
+
+      // névadási útmutató ehhez a típushoz (naming convention)
+      // rákérdezünk valamire, ezért kezdjük "is"-zel vagy "has"-zel, ha lehet
+      var isFat = true; // is fat? - yes
+      var hasMoney = true; // has money? - yes
+      var isHungarian = false; // is hungarian? - no
+      var isLoggedIn = false; // is logged in? - no
+
+
+
+      ////////// NUMBER TÍPUS ///////////
+      
+      // egész szám - angolul "integer" (röviden "int")
+      var egeszSzam = 100;
+      
+      // Tört szám - angolul float (azért mert "lebegőpontos" kódolással van tárolva a kettes számrendszerben)
+      // Tizedes pontot használunk, nem vesszőt(!) - ez fontos.
+      // Miért? Egyrészt azért, mert a vesszőt másra használjuk (pl. tömb elemeit választjuk el vagy a for ciklus ciklusmozgatói között)
+      // Illetve angol nyelvterületen a tizedes pont (12.3), nem a tizedes vessző (12,3)
+      var tortSzam = 12.2;
+
+
+      // speciális számok
+
+      // NaN - Not a Number
+      var nemSzam = 100 / "Andika";   // elosztok egy számot egy nem számmal, pl stringgel
+      console.log(nemSzam);           // ezt írja ki: "NaN"
+
+      // Infinity
+      var vegtelen = 42 / 0;      // elosztok egy számot nullával
+      console.log(vegtelen);      // ezt írja ki: "Infinity"
+
+      // -Infinity
+      var minuszVegtelen = 42 / -0;     // elosztok egy számot egy minusz nullával
+      console.log(minuszVegtelen);      // ezt írja ki: "-Infinity"
+
+      // Érdekesség: létezik 0 és -0 szám is. Mindkettő ugyanannyi értékű.
+
+      console.log(0 === -0) // true
+
+
+      ////////// STRING TÍPUS ///////////
+
+      // Ezt már jól ismerjük :)
+
+      // double quotes
+      var kivansag = "Jóétvágyat, Andika!";  
+      // single quotes
+      var kivansag2 = 'Jóétvágyat, Mátéka!'; 
+      
+      // Létezik többsoros string is.
+      // Erre az úgynevezett backtick-et használjuk. Ez a karakter: `
+      var uzenet = ` Szia
+                    Mi a helyzet?
+
+                    BR,
+                    Máté `;
+
+
+      /*****************************************/
+      /************* Objektumok ****************/
+      /*****************************************/
+
+      // Ezek összetett adattípusok, szóval különválasztjuk a primitív adattípuoktól.
+
+      // Egy "valamiről" van szó, ennek vannak tulajdonságai.
+      // Egy objektumban ezeket gyűjtjük össze.
+      var topanka = {
+        size: 38,
+        color: "black",
+        material: "leather",
+        style: "sport",
+        isNew: "true", 
+        price: 399.99
+      }
+
+      var doggy = {
+        age: 2,
+        hasClothes: true,
+        isDangerous: false,
+        name: "Ulászló",
+        owner: "Andika",
+        weight: 3.2
+      }
+
+      var city = {
+        name: "Madrid",
+        country: "Spain",
+        population: 3223334,
+        isCapital: true,
+        area: 604.31,
+        isCatalan: false
+      }
+
+      // Vegyük észre: az objektumon belül nem egyenlőség jellel adunk értéket, hanem kettősponttal.
+
+      // Irassuk ki őket:
+      console.log(topanka);
+      // Object { size: 38, color: "black", material: "leather", style: "sport", isNew: "true", price: 399.99 }
+
+      console.log(doggy);
+      // Object { age: 2, hasClothes: true, isDangerous: false, name: "Ulászló", owner: "Andika", weight: 3.2 }
+
+      console.log(city);
+      // Object { name: "Madrid", country: "Spain", population: 3223334, isCapital: true, area: 604.31, isCatalan: false }
+
+
+      // Láthatjuk, hogy az objectumokban kulcs-érték párok jelennek meg.
+      // A "topanka" esetén a "size" egy kulcs és a "38" egy érték.
+      // A "doggy" esetén a "hasClothes" egy kulcs és a "true" egy érték.
+      // A "city" esetén a "country" egy kulcs és a "Spain" egy érték.
+
+      // Az objectum a JavaScript nyelvben egy Map, azaz kulcs-érték párok gyűjteménye.
+      // Ezeket a kulcs-érték párokat property-nek (tulajdon) nevezzük.
+
+      // A kulcs-érték párok gyűjteményének különböző neveit használjuk különböző programozási nyelvekben.
+      // Dictionary
+      // Map
+      // Associative array
+      // Asszociatív tömb
+      
+      // Hogy nyerjük ki egy objektum egy property-jét.
+      // A kulcsra hivatkozunk és így megkaptjuk az értéket.
+      // Erre 2 lehetőség van.
+
+      // 1. lehetőség
+      // Az objektum (object) után teszünk egy pontot és megadjuk a kulcsot.
+      console.log("A város neve: " + city.name); // A város neve: Madrid
+      console.log("A topánka ára: $" + topanka.price); // A topánka ára: $399.99
+
+
+      // 2. lehetőség
+      // Az objektumot kulcsok tömbjének tekintjük és stringként hivatkozunk a kívánt kulcsra.
+      console.log("A kutya kora: " + doggy["age"]); // A kutya kora: 2
+      console.log("A város népessége: " + city["population"]); // A város népessége: 3223334
+
+
+      // Honnan tudhatjuk, hogy milyen property-jei vannak egy objektumnak?
+      var car = {
+        name: "Fiat",
+        model: "500",
+        weight: "850kg",
+        color: "white",
+        driver: "Andika"
+      }
+
+      // Az Object.keys() metódust használjuk, hogy megkapjuk a kulcsokat tömbként.
+      // (Csak a kulcsokat, az értékek nélkül)
+      // A zárójelek közé kell írni az objektumot magát.
+
+      console.log(Object.keys(car)); // a kulcsok egy tömbben: ["name", "model", "weight", "color", "driver"]
+
+      // Írjuk ki egyesével a kulcsokat.
+      for (let i = 0; i < Object.keys(car).length; i++ ) {
+        console.log(Object.keys(car)[i]); // kulcs: érték
+      }
+      // Írjuk ki egyesével a kulcs érték párokat.
+      for (let i = 0; i < Object.keys(car).length; i++ ) {
+        console.log(  Object.keys(car)[i] + ": " + car[ Object.keys(car)[i] ]  ); // kulcs: érték
+        //           a kulcs "i"-edik eleme        az objektum "kulcs"-adik eleme
+      }
+
+      // Kicsit egyszerűbben
+      var keys = Object.keys(car);
+
+      for (let i = 0; i < keys.length; i++ ) {
+        console.log(  keys[i] + ": " + car[ keys[i] ]  ); // kulcs: érték
+      }
+
+      // Tudjuk egy objektum property-eit módosítani?
+      // Igen, lehetséges hozzáadni, módosítani és törölni őket.
+
+      var kenyer = {
+        szin: "barna",
+      }
+      // 1. Hozzáadni új property-t:
+      kenyer.suly = 400;
+      kenyer["kemeny"] = true;
+      
+      console.log("Property hozzáadás után");
+      console.log(kenyer);
+
+      // 2. Módosítani egy meglévő property-t:
+      kenyer.szin = "fehér";
+      kenyer["suly"] = 1000;
+
+      console.log("Property módosítás után");
+      console.log(kenyer);
+
+      // 3. Törölni property-t:
+      delete kenyer.szin;
+
+      console.log("Property törlés után");
+      console.log(kenyer);
+
+    </script>
+  </body>
+</html>
