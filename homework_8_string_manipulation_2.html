@@ -11,39 +11,73 @@
       // Azaz cserélj ki minden "k" betűt "g"-re.
       var allat = "Kiskutya";
 
+      allat = allat.replaceAll("k", "g");
+      allat = allat.replaceAll ("K", "g");
+      console.log(allat);
+
       console.log("Exercise 2");
       // Használd a replaceAll metódust (kétszer), hogy az "eb" változó értéke "Gisgugya" legyen!
       // Azaz cserélj ki minden "k" betűt "g"-re, majd minden "t" betűt "g"-re!
       var eb = "Kiskutya";
+
+      eb = eb.replaceAll("k", "g");
+      eb = eb.replaceAll("K", "G");
+      eb = eb.replaceAll("t", "g");
+      console.log(eb);
 
       console.log("Exercise 3");
       // Használd a replaceAll metódust, hogy a "noveny" változó értéke "almafa" legyen!
       // Azaz cserélj ki minden "szilva" string részletet (substringet) "alma"-ra!
       var noveny = "szilvafa";
 
+      noveny = noveny.replaceAll("szilva", "alma");
+      console.log(noveny);
+
       console.log("Exercise 4");
       // Használd a replaceAll metódust, hogy a "konzol" változó értéke "xbox konzol" legyen!
       var konzol = "playstation konzol";
+
+      konzol = konzol.replaceAll("playstation", "xbox");
+      console.log(konzol);
 
       console.log("Exercise 5");
       // Használd a replaceAll metódust, hogy a "teritek" változó értéke "lapostányér" legyen!
       var teritek = "mélytányér";
 
+      teritek = teritek.replaceAll("mély", "lapos");
+      console.log(teritek);
+
       console.log("Exercise 6");
       // Használd a replaceAll metódust, hogy az "adathordozo" változó értéke "DVD" legyen!
       var adathordozo = "dvd";
+
+      adathordozo = adathordozo.replaceAll("dvd", "DVD");
+      console.log(adathordozo);
 
       console.log("Exercise 7");
       // Használd a replaceAll metódust, hogy a "film" változó értéke "TeneT" legyen!
       var film = "tenet";
 
+      film = film.replaceAll("t", "T");
+      console.log(film);
+
       console.log("Exercise 8");
       // Használd a replaceAll metódust, hogy a "stringecske" változóben minden állat "cat" legyen!
       var stringecske = "The quick brown fox jumps over the lazy dog.";
 
+      stringecske = stringecske.replaceAll("fox", "cat");
+      stringecske = stringecske.replaceAll("dog", "cat");
+      console.log(stringecske);
+
+
       console.log("Exercise 9");
       // Használd a replaceAll metódust, hogy a tömb minden elemében kicseréld a "tűz" szót "jég"-re!
       var tuzesSzavak = [ "tűzvarázsló", "tűzmágia", "tűzhalál", "tűz dala", "tűzgyűrű", "pusztító tűz", "tűz"];
+
+      for(var i = 0; i < tuzesSzavak.length; i = i + 1) {
+        tuzesSzavak[i] = tuzesSzavak[i].replaceAll("tűz", "jég");
+        console.log(tuzesSzavak[i]);
+      }
 
       console.log("Exercise 10");
       // Adott egy mondat, amit egy tömb szavaiból állított össze valaki.
@@ -56,26 +90,38 @@
       // A végén maradt egy space.
       // Írd ki a programot felesleges mondatvégi space nélkül!
 
+      console.log(mondat.trim());
+
       console.log("Exercise 11");
       // A tömb összes elemét formázd meg, azaz töröld ki az elején és a végén lévő felesleges whitespaceket.
       var szavak2 = ["   Megéget", " a", "Sun", " Full  ", "Classic ", " ez", "a", "  Track   "];
 
-      console.log("Exercise 11");
+      for(var i = 0; i < szavak2.length; i++) {
+        szavak2[i] = szavak2[i].trim();
+        console.log(szavak2[i]);
+      }
+
+      console.log("Exercise 12");
       // Googlezós feladat, mert nem tanultuk.
       // Adott egy string, szeretném, hogy minden betűje kisbetű legyen (angulol lowercase).
       // Létezik egy metódus (method), ami a stringet lowercase állapotba hozza.
       // Keresd meg a metódust és ezt alkalmazva add értékül a lowercaseWord változónak a lowercase-zé formázott szót!
       var word = "PieD PiPer";
-      var lowercaseWord;
+      var lowercaseWord = word.toLowerCase();
+      console.log(lowercaseWord);
 
-      console.log("Exercise 12");
+
+      console.log("Exercise 13");
       // Googlezós feladat, mert nem tanultuk.
       // Most nagybetűs (uppercase) szót szeretnék.
       // Keresd meg a metódust és ezt alkalmazva add értékül a uppercaseWord változónak a uppercase-zé formázott szót!
 
       var word2 = "the new york times";
-      var uppercaseWord;
+      var uppercaseWord = word2.toUpperCase();
+      console.log(uppercaseWord);
 
+
+     
 
     </script>
   </body>
