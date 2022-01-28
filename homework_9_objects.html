@@ -10,23 +10,107 @@
 
 
       console.log("Exercise 2");
-      // Írd ki a konzolra a "ertekek" tömb minden elemének típusát.
+      // A feladatban szerepel a "valami", "mate" és "tomb" változók, amik részei az "ertekek" tömbnek. Ezekkel nincs teendőd. 
+      // Írd ki a konzolra egyesével az "ertekek" tömb minden elemének típusát.
       // Még nem tanultuk, hogy lehet kiírni valaminek a típusát, nézz utána! :)
-      // Megjelenik egy olyan típus, amit még nem tanultunk. Van tipped mi lehet az?
+      // Megjelenik egy olyan típus, amit még nem tanultunk. Van tipped mit takarhat ez a típus?
       var valami;
       var mate = {kor: 29};
       var tomb = [1,2,3];
+
       var ertekek = [2, "szasz", 4.3, `szivasz`, 0, mate,  NaN, tomb, Infinity, 'szevasz', true, valami, false];
    
    
       console.log("Exercise 3");
-      // Készíts egy objektumot.
-      // Legyen egy boolean, egy number, egy string és egy objektum property-je.
+      // Készíts egy tetszőleges objektumot.
+      // Legyen az objektumnak egy tetszőleges boolean, egy number, egy string és egy objektum property-je.
+      // Objektumnak lehet akár egy másik objektum a propertyje. Nem tanultuk, de megpróbálhatod kitalálni, hogy csináljuk.
    
 
       console.log("Exercise 4");
+      // Írd ki a téglalap kerületét és területét.
+
+      var teglalap = {
+        a: 4,
+        b: 5
+      }
+
+      console.log("Exercise 5");
+      // A sugár (r) alapján számold ki a kör kerületét.
+      // Hozz létre egy circumference (kerület) property-t a circle objektumban és add neki értékül a kör kerületét.
+      // (A PI értékeként használd a 3.14-et.)
+
+      var circle = {
+        r: 10
+      }
+
+      console.log("Exercise 6");
+      // Az egyenleg bizalmas adattá vált a bankszámla adatait tartalmazó objektumban.
+      // Töröld ezt a property-t az objektumból.
+      var bankszamla = {
+        currency: "EUR",
+        owner: "Dr Szabo, Andrea Anna",
+        balance: "csillió-millió"
+      }
+
+
+      console.log("Exercise 7");
+      // Andika feljegyezte hány órás edzéseket tartott a héten.
+      // Egy tömbben tárolta el ezeket.
+      // Töltsd fel az "edzesekPercben" tömböt, amiben percként vannak eltárolva ezek az edzés hosszok, nem pedig órában.
+      var edzesekOraban = [1, 4, 3, 2, 5, 6, 7, 1, 3];
+      var edzesekPercben = [];
+
+
+      console.log("Exercise 8");
+      // Így írjuk ki egy tomb legkisebb elemét.
+      // A feladatod csak annyi, hogy megértsd. 
+
+      var szamok = [4, 3, 6, 8, 12, 13];
+      
+      var minNumber = 9999999999; // Ide írunk egy jó nagy számot, ami tuti, hogy nagyobb minden elemnél.
+
+      for(let i = 0; i < szamok.length; i++) {
+        // megnézzük, hogy az i-edik elem kisebb-e, mint a minNumber változó
+        if(szamok[i] < minNumber) {
+          // ha az i-edik elem kisebb, akkor az lesz a minNumber változó új értéke
+          minNumber = szamok[i];
+        }
+        // ezután a for ciklusban minden egyes elemet összehasonlítunk az minNumber-rel
+        // próbáld fejben lejátszani, hogy hogy történik. ha nem magyaráztam el jól, szólj!
+      }
+      console.log(minNumber);
+
+
+      console.log("Exercise 9");
+      // Írd ki a tömb legnagyobb elemét
+      // Ha nem magyaráztam el jól az előzőt, nézzük meg együtt!
+      var maxNumber = 0;
+      var szamok2 = [41, 3, 6, 8, 12, 13];
+
+
+      console.log("Exercise 10");
+      // Számold meg a true értékeket a tömbben.
+      var dontesek = [true, false, true, true, false, true, false, true, false];
+
+
+      console.log("Exercise 11");
+      // Adott egy tömb, amiben tömbök vannak.
+      // Írd ki, hogy hány (al)tömbben szerepel a 0 szám.
+      // Így vizsgáljuk meg, hogy egy tömb tartalmazza-e a 0-t? [0,1,2].includes(0); Ha true, akkor tartalmazza, ha false akkor nem.
+      var tombocske = [
+        [1, 3, 5, 6, 7],
+        [0, 4, 5, 6, 0],
+        [7, 3, 0, 6, 7],
+        [1, 3, 5, 6, 0]
+      ]
+      var szamlalo = 0;
+   
+
+      console.log("Exercise 12");
       // A társaság tegnap este kocsmázás közben egy fiú társaságba futott.
       // Mindenki bepasizott, ezért állítsd át a szingli státuszokat hamisra.
+      // (Egy for ciklussal járd be a "csajok" tömböt. Az minden eleme egy-egy objektum.)
       var csajok = [
         {
           name: "Ványa", 
@@ -49,80 +133,6 @@
           single: true
         }
       ];
-
-
-      console.log("Exercise 5");
-      // Írd ki a téglalap kerületét és területét.
-      var teglalap = {
-        a: 4,
-        b: 5
-      }
-
-
-      console.log("Exercise 6");
-      // Az egyenleg bizalmas adattá vált a bankszámla adatait tartalmazó objektumban.
-      // Töröld ezt a property-t az objektumból.
-      var bankszamla = {
-        currency: "EUR",
-        owner: "Dr Szabo, Andrea Anna",
-        balance: "csillió-millió"
-      }
-
-
-      console.log("Exercise 7");
-      // A sugár (r) alapján számold ki a kör kerületét.
-      // Hozz létre egy circumference (kerület) property-t a circle objektumban és add neki értékül a kör kerületét.
-      var circle = {
-        r: 10
-      }
-
-
-      console.log("Exercise 8");
-      // Andika feljegyezte hány órás edzéseket tartott a héten.
-      // Egy tömbben tárolta el ezeket.
-      // Készíts egy új tömböt, amiben másodpercként vannak eltárolva ezek az edzés hosszok, nem pedig órában.
-      var edzesekOraban = [1, 4, 3, 2, 5, 6, 7, 1, 3];
-
-
-      console.log("Exercise 9");
-      // Így írjuk ki egy tomb legkisebb elemét.
-      // A feladatod csak annyi, hogy megértsd. 
-      var szamok = [4, 3, 6, 8, 12, 13];
-      
-      var minNumber = 9999999999; // Ide írunk egy jó nagy számot, ami nem szerepel a tömbben.
-
-      for(let i = 0; i < szamok.length; i++) {
-        // megnézzük, hogy az i-edik elem kisebb-e, mint a minNumber változó
-        if(szamok[i] < minNumber) {
-          // ha az i-edik elem kisebb, akkor az lesz a minNumber változó új értéke
-          minNumber = szamok[i];
-        }
-        // ezután a for ciklusban minden egyes elemet összehasonlítunk az minNumber-rel
-        // próbáld fejben lejátszani, hogy hogy történik. ha nem magyaráztam el jól, szólj!
-      }
-
-
-      console.log("Exercise 10");
-      // Írd ki a tömb legnagyobb elemét
-      var maxNumber = 0;
-      var szamok2 = [41, 3, 6, 8, 12, 13];
-
-
-      console.log("Exercise 11");
-      // Számold meg a true értékeket a tömbben.
-      var dontesek = [true, false, true, true, false, true, false, true, false];
-
-
-      console.log("Exercise 12");
-      // Adott egy tömb, amiben tömbök vannak.
-      // Írd ki, hogy hány (al)tömbben szerepel a 0 szám.
-      var tombocske = [
-        [1, 3, 5, 6, 7],
-        [0, 4, 5, 6, 0],
-        [7, 3, 0, 6, 7],
-        [1, 3, 5, 6, 0]
-      ]
-
 
    </script>
   </body>
