@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script>
+      ///////// Function-ök
+      // Mi is az a function (függvény)?
+
+
+      // Egy function csinál valamit. Azt amit mi akarunk, amire kitaláltuk.
+
+      // Először deklaráljuk, majd amikor akarjuk, meghívhatjuk a kódban.
+
+      console.log("Excercise #1");
+
+      function andikaLog() {
+        console.log("Andika 1995-ben született egy téli napon, Kazincbarcikán. Az egyetemi évei alatt megismerkedett későbbi férjével és cégtársával Mátéval.");
+      }
+
+
+      // Meghívás:
+
+      andikaLog(); // Akárhányszor meghívhatjuk a függvényt, és logolni fog.
+
+      andikaLog();
+      andikaLog();
+      andikaLog();
+      andikaLog();
+      andikaLog();
+
+
+      // Nézzük meg miből épül fel egy function:
+
+      // 1. A function kulcsszó jelzi, hogy függvényt készítünk.
+      // 2. Adunk neki egy nevet, ami jelzi más programozóknak, hogy mit csinál a függvény. Esetünkben logol.
+      // 3. A kerek zárójelek szintén a függvény részei a neve után.
+      // 4. A kapcsos zárójelek közé bármilyen kódrészletet írhatunk, akár nagyon hosszút is. Ez fog végrehajtódni minden egyes függvényhívásnál.
+
+
+      // De mire jók?
+      // Akkor készítünk egy függvényt, ha valamit többször is akarunk használni és nem akarjuk a kódot másolni.
+      // Pl. itt egy nagyon hosszú stringet kellene minden egyes helyre bemásolni, de le tudjuk rövíteni egy 4 karakter hosszú függvénynévvel (andikaLog).
+
+
+      /////// Nézzünk meg egy másik példát. Írunk egy függvényt, amely meg fogja növelni a számláló (counter) változó értékét eggyel.
+      console.log("Excercise #2");
+
+      var counter = 0; // számláló
+
+      // Így növeljük meg az értékét:
+      counter = counter + 1; // mi a rövidített alakja? 
+
+      console.log(counter); // mit ír ki?
+
+
+
+
+      // Deklaráljunk egy függvényt, amely megnöveli eggyel az értéket és ki is írja a változást.
+      function increaseCounter() {
+        counter = counter + 1;
+        console.log(counter);
+      }
+
+      // Hívjuk meg a függvényt, és ezzel növeljük meg az értéket eggyel.
+      increaseCounter();
+
+      // Növeljük meg az értéket mégeggyel.
+      increaseCounter();
+
+      // És mégeggyel.
+      increaseCounter();
+
+
+
+
+      /////// Írunk egy függvényt, amely mindig hozzáad egy eggyel nagyobb számot a tömbhöz. 
+      // A végeredmény így nézzen ki: [0, 1, 2, 3, 4, 5, ...]; 
+      console.log("Excercise #3");
+
+      var i = 0;
+      var tomb = [0];
+
+      function addNumberToArray() {
+        i++;
+        tomb.push(i);
+        console.log(tomb);
+      }
+
+      addNumberToArray(); // [0,1]
+      addNumberToArray();
+      addNumberToArray();
+      addNumberToArray();
+
+
+
+      /////// A függvényeknek adhatunk paramétereket is.
+      console.log("Excercise #4");
+
+      // A zárójelek közé adhatunk paramétert is.
+      function logol(uzenet) {
+        console.log(uzenet);
+      }
+
+      logol("Jóétvágyat, Andika!"); 
+
+      logol("Jóétvágyat, Mátéka!"); 
+
+      logol("Jóétvágyat, Ulászló!"); 
+
+
+
+      /////// A függvényeknek adhatunk paramétereket is.
+      console.log("Excercise #5");
+
+      function osszead(a, b) {
+        console.log(a + b);
+      }
+      
+      osszead(1, 3); // 4
+      osszead(4, 3); // 7
+      osszead(100, 103);
+      osszead(1000, 0);
+      osszead(1, -1);
+      osszead(1.4, 2.3);
+
+
+      // Akkor készítünk egy függvényt, ha valamit többször is akarunk használni és nem akarjuk a kódot másolni.
+
+      // Pl. több feladatban is meg kell vizsgálni, hogy egy szó tartalmazza-e az "Andika" substringet.
+
+      ///// Hagyományos megoldás
+
+      console.log("Excercise #6");
+
+      // Vizsgáld meg, hogy a változó tartalmazza-e az "Andika" substringet.
+      var mondat = "Andika eszik";
+
+      if(mondat.includes("Andika")) {
+        console.log(mondat + ": tartalmazza az Andika szót");
+      } else {
+        console.log(mondat + ": nem tartalmazza az Andika szót");
+      }
+
+      console.log("Excercise #7");
+      // Írd ki a tömb elemei tartalmazzák-e az "Andika" substringet.
+      var mondatok = ["Andika eszik", "Andika iszik", "Andi és Undi"]
+      for (var i = 0; i < mondatok.length; i++) {
+        if(mondatok[i].includes("Andika")) {
+          console.log(mondatok[i] + ": tartalmazza az Andika szót.");
+        } else {
+          console.log(mondatok[i] + ": nem tartalmazza az Andika szót");
+        }
+      }
+
+
+      ///// Ezt megoldhatjuk úgy is, hogy írunk egy függvényt, ami a közös részeket "kiemeli"
+
+      function andikaVizsgalat(vizsgalandoString) {
+        if(vizsgalandoString.includes("Andika")) {
+          console.log(vizsgalandoString + ": tartalmazza az Andika szót");
+        } else {
+          console.log(vizsgalandoString + ": nem tartalmazza az Andika szót");
+        }
+      }
+
+      console.log("Excercise #6 v2");
+      // Vizsgáld meg, hogy a változó tartalmazza-e az "Andika" substringet.
+      var mondat = "Andika eszik";
+      andikaVizsgalat(mondat);
+
+      console.log("Excercise #7 v2");
+      // Írd ki a tömb elemei tartalmazzák-e az "Andika" substringet.
+      var mondatok = ["Andika eszik", "Andika iszik", "Andi és Undi"]
+      for (var i = 0; i < mondatok.length; i++) {
+        andikaVizsgalat(mondatok[i]);
+      }
+
+
+    </script>
+  </body>
+</html>
