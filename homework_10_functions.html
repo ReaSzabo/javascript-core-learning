@@ -7,6 +7,12 @@
 
       console.log("Exercise 1");
       // Create a function that logs "Good morning!"
+
+      function greetingsLog() {
+        console.log("Good morning!");
+      }
+
+      greetingsLog();
       
 
       console.log("Exercise 2");
@@ -15,12 +21,24 @@
       // The function should log the product of the 2 numbers
       // (product = szorzat)
 
+      function product(x, y) {
+        console.log(x * y);
+      }
+
+      product(1, 2);
 
       console.log("Exercise 3");
       // Create a function that has 2 paramters.
       // a and b
       // The function should log the difference of the 2 numbers
       // (difference = különbség)
+
+
+      function difference(a, b) {
+        console.log(a - b);
+      }
+
+      difference(1, 2);
 
       console.log("Exercise 4");
       // ELTE feladat
@@ -53,6 +71,24 @@
 
       */
 
+      function szorzas(a, b) {
+        console.log(a * b);
+      }
+
+      console.log("a = "); 
+      szorzas(123, 7);
+
+      console.log("b = "); 
+      szorzas(11, 13);
+
+      function osztas(a, b) {
+        console.log(a / b);
+      }
+
+      console.log("a / b = "); 
+      osztas(861, 173);
+
+
       console.log("Exercise 6");
       /*
       ELTE feladat
@@ -62,7 +98,8 @@
       F=(3/4)*5
 
       a) 3.75,      b) 2.25,       c) 0.15,     d) 2.4
-      */
+      
+      a) */
 
 
       console.log("Exercise 7");
@@ -73,7 +110,13 @@
       letét és kerületét!
       (A paraméterek az "a" és "b" oldal.)
       */
+
+      function teglalapTeruleteEsKerulete(a, b) {
+        console.log("A téglalap területe: " + a * b);
+        console.log("A téglalap kerülete: " + 2 * (a + b));
+      }
       
+      teglalapTeruleteEsKerulete(10, 6);
 
       console.log("Exercise 8");
       /*
@@ -83,6 +126,11 @@
       (A paraméter az "r" sugár.)
       */
 
+      function korKerulet(r) {
+        console.log(2 * (r * 3,14));
+      }
+
+      korKerulet(4);
 
       console.log("Exercise 9");
       /*
@@ -92,6 +140,11 @@
       pl. x param: 20, log: 25
       */
 
+      function novoget(x) {
+        console.log((x / 100) * 125);
+      }
+
+      novoget(20);
 
       console.log("Exercise 10");
       /*
@@ -101,7 +154,12 @@
       (1 láb = 30,48 cm)
       pl. x param: 2, log: 60,96
       */
- 
+
+      function labToCm(x) {
+        console.log(x * 30.48 + " cm");
+      }
+      
+      labToCm(2);
 
       console.log("Exercise 11");
       /*
@@ -112,17 +170,35 @@
       pl. gallon param: 1, log: 	3.77783918 kg
       */
  
+      function gallonToKg(gallon) {
+        console.log((gallon * 3.78541) / 0.998 + " kg");
+      }
+
+      gallonToKg(1);
 
       console.log("Exercise 12");
       /*
       Írjunk függvényt, amely három beolvasott számot összeszoroz!
       */
 
+      function szorzaska(x, y, z) {
+        console.log(x * y * z);
+      }
+
+      szorzaska (1, 2, 3);
 
       console.log("Exercise 13");
       /*
       Írjunk függvényt, amely kiírja az első tíz, hárommal osztható szám felét!
       */
+
+
+      function kiir() {
+        for( var i = 3; i < 31; i = i +3) {
+          console.log(i / 2);
+        }   
+      }
+      kiir()
 
 
       console.log("Exercise 14");
@@ -131,6 +207,14 @@
       (0, 1, 2, 3, 4, 5 ...)
       "n" a függvény paramétere legyen.
       */
+
+      function alatta(n) {
+        for(var i = 0; i < n; i++) {
+          console.log(i);
+        }
+      }
+
+      alatta(5);
 
       
 
