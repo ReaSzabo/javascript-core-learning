@@ -11,11 +11,18 @@
       // multiple = többszörös
 
 
+      for(var i = 0; i <= 100; i = i + 5) {
+      if(i > 0) {
+        console.log(i);
+        }
+      }
+
+
       console.log("Exercise 2");
       // Hallottál már a Fibonacci számokról?
       // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
       // Minden szám az előző 2 szám összegéből áll. (n1 + n2 = n3)
-      // Alább találsz egy algoritmust, amely kiírja az első 10 fibonacci számok.
+      // Alább találsz egy algoritmust, amely kiírja az első 10 fibonacci számot.
       // Írj egy függvényt, amely egy "n" nevű szám paramétert kap!
       // A függvény írja ki az első "n" fibonacci számot!
 
@@ -23,24 +30,64 @@
       var n2 = 2;
       var nextFibonacci;
 
-      for(var i = 0; i < 10; i++) {
+      /* for(var i = 0; i < 10; i++) {
         console.log(n1);
         nextFibonacci = n1 + n2;
         n1 = n2;
         n2 = nextFibonacci;
+      } */
+
+
+      function nFibonacci(n) {
+        for(var i = 0; i < n; i++) {
+          console.log(n1);
+          nextFibonacci = n1 + n2;
+          n1 = n2;
+          n2 = nextFibonacci;
+        }
       }
-      
+
+      nFibonacci(20);
 
       console.log("Exercise 3");
       // Írj egy függvényt, amely kiírja a paraméterként kapott szám négyzetét és köbét!
+
+
+    function negyzetEsKob(n) {
+      console.log("A paraméterként kapott szám négyzete: " + n * n);
+      console.log("A paraméterként kapott szám köbe: " + n * n * n);
+    }
+
+    negyzetEsKob(2);
 
 
       console.log("Exercise 4");
       // Írj egy függvényt, amely kiírja, hogy a paraméterként kapott szám páros vagy páratlan!
 
 
+      function parosParatlan(x) {
+        if(x % 2 == 0) {
+          console.log("A paraméterként kapott szám páros.");
+        }
+        else {
+          console.log("A paraméterként kapott szám páratlan.");
+        }
+      }
+      
+
+      parosParatlan(8);
+
+
       console.log("Exercise 5");
       // Írj egy függvényt, amely kiírja a két paraméterként kapott stringet kötőjellel összefűzve!
+
+
+
+      function osszefuz(x, y) {
+        console.log(x + "-" + y);
+      }
+
+      osszefuz("Szabó", "Koncz");
 
 
       console.log("Exercise 6");
@@ -50,6 +97,15 @@
       var tomb2 = ["Szia", "Mia"];
 
 
+
+    function tombElsoEleme(a) {
+      console.log(a[0]);
+    }
+
+    tombElsoEleme(tomb1);
+    tombElsoEleme(tomb2);
+
+
       console.log("Exercise 7");
       // Írj egy függvényt, amely kiírja, hogy a paraméterként kapott szám, melyik napot jelöli a héten.
       // Pl. hetNapja(1) - ezt írja ki: "Hétfő"
@@ -57,6 +113,31 @@
       // hetNapja(7) - ezt írja ki: "Vasárnap"
       // hetNapja(10) - ezt írja ki: "Nem megfelelő szám"
       // Ha 1-nél kisebb, vagy 7-nél nagyobb a szám, akkor írd ki: "Nem megfelelő szám"
+
+
+      function melyikNapVanMa(a) {
+        if(a == 1) {
+          console.log("Hétfő");
+        } else if (a == 2) {
+            console.log ("Kedd");
+        } else if (a ==3) {
+            console.log ("Szerda");
+        } else if (a == 4) {
+            console.log ("Csütörtök");
+        } else if (a == 5) {
+            console.log ("Péntek");
+        }else if (a == 6) {
+            console.log ("Szombat");
+        } else if (a ==7) {
+            console.log ("Vasárnap");
+        }
+        else {
+          console.log("Ez a szám nem azonosítható a hét egyik napjával sem.");
+        }
+      }
+
+
+      melyikNapVanMa(5);
 
       console.log("Exercise 8");
       
