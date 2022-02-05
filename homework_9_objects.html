@@ -8,6 +8,13 @@
       console.log("Exercise 1");
       // Írj ki a konzolra egy NaN, egy Infinity és egy -Infinity értéket.
 
+      var elso = 1993 / "Koncz";
+      var masodik = 1993 / 0;
+      var harmadik = 1993 / -0;
+      console.log(elso + ", " + masodik + ", " + harmadik)
+
+
+
 
       console.log("Exercise 2");
       // A feladatban szerepel a "valami", "mate" és "tomb" változók, amik részei az "ertekek" tömbnek. Ezekkel nincs teendőd. 
@@ -19,12 +26,27 @@
       var tomb = [1,2,3];
 
       var ertekek = [2, "szasz", 4.3, `szivasz`, 0, mate,  NaN, tomb, Infinity, 'szevasz', true, valami, false];
-   
+      
+      for( var i =0; i < ertekek.length; i = i +1) {
+        console.log(typeof(ertekek[i]));
+      }
    
       console.log("Exercise 3");
       // Készíts egy tetszőleges objektumot.
       // Legyen az objektumnak egy tetszőleges boolean, egy number, egy string és egy objektum property-je.
       // Objektumnak lehet akár egy másik objektum a propertyje. Nem tanultuk, de megpróbálhatod kitalálni, hogy csináljuk.
+
+      var torta = {
+        isExpensive: true,
+        slice: 10,
+        color: "black",
+        ingredient: {
+          mainIngredient: "milk",
+          isAllergen: true,
+        } 
+      }
+
+      console.log(torta);
    
 
       console.log("Exercise 4");
@@ -35,14 +57,24 @@
         b: 5
       }
 
+
+      console.log("A téglalapk kerülete: " + 2 * (teglalap.a + teglalap.b));
+      console.log("A téglalap területe: " + teglalap.a * teglalap.b);
+
+
       console.log("Exercise 5");
       // A sugár (r) alapján számold ki a kör kerületét.
       // Hozz létre egy circumference (kerület) property-t a circle objektumban és add neki értékül a kör kerületét.
       // (A PI értékeként használd a 3.14-et.)
 
       var circle = {
-        r: 10
+        r: 12
       }
+
+      circle.circumference = 2 * circle.r * 3.14;
+      console.log("A kör kerülete: " + circle.circumference);
+      console.log(circle);
+
 
       console.log("Exercise 6");
       // Az egyenleg bizalmas adattá vált a bankszámla adatait tartalmazó objektumban.
@@ -53,6 +85,9 @@
         balance: "csillió-millió"
       }
 
+      delete bankszamla.balance;
+      console.log(bankszamla);
+
 
       console.log("Exercise 7");
       // Andika feljegyezte hány órás edzéseket tartott a héten.
@@ -60,6 +95,12 @@
       // Töltsd fel az "edzesekPercben" tömböt, amiben percként vannak eltárolva ezek az edzés hosszok, nem pedig órában.
       var edzesekOraban = [1, 4, 3, 2, 5, 6, 7, 1, 3];
       var edzesekPercben = [];
+
+      for(var i = 0; i < edzesekOraban.length; i = i + 1) {
+        edzesekPercben.push(edzesekOraban[i] * 60);
+      }
+
+      console.log(edzesekPercben);
 
 
       console.log("Exercise 8");
@@ -88,10 +129,27 @@
       var maxNumber = 0;
       var szamok2 = [41, 3, 6, 8, 12, 13];
 
+      for(let i = 0; i < szamok2.length; i = i + 1) {
+        if(szamok2[i] > maxNumber) {
+          maxNumber = szamok2[i];
+        }
+      }
+
+      console.log(maxNumber);
+
 
       console.log("Exercise 10");
       // Számold meg a true értékeket a tömbben.
+
+      var szamlalo = 0;
       var dontesek = [true, false, true, true, false, true, false, true, false];
+
+      for(let i = 0; i < dontesek.length; i = i + 1) {
+        if(dontesek[i] == true) {
+          szamlalo = szamlalo + 1; // szamlalo++;
+        }
+      }
+      console.log(szamlalo)
 
 
       console.log("Exercise 11");
@@ -105,6 +163,8 @@
         [1, 3, 5, 6, 0]
       ]
       var szamlalo = 0;
+
+      
    
 
       console.log("Exercise 12");
