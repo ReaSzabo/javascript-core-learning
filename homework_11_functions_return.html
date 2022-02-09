@@ -58,7 +58,7 @@
       var tomb3 = [true, false, true];
 
       function utolsoElem(tombocske) {
-        // ide írd a kódod
+        return tombocske[tombocske.length - 1];
       }
 
       tomb = utolsoElem(tomb);
@@ -72,8 +72,8 @@
 
       console.log("Exercise 11");
       // Írj egy function-t, amely a paraméterként kapott string utolsó betűjével tér vissza.
-      function utolsoBetu() {
-        // Ide írd a kódod
+      function utolsoBetu(x) {
+        return x.charAt(x.length-1);
       }
 
       var betu = utolsoBetu("Aladár");
@@ -93,6 +93,11 @@
       var a = 10;
       var b = 20;
       
+      var c = a;
+      a = b;
+      b = c;
+
+      console.log(a + ", " + b);
 
    </script>
   </body>
