@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <script>
+
+    // #1
+    // Create a switch statement from the following if statement
+
+    var favoriteDay = "Monday";
+
+    if (favoriteDay == "Monday") {
+      console.log("Their favorite day is Monday.");
+    } else if (favoriteDay == "Tuesday") {
+      console.log("Their favorite day is Tuesday.");
+    } else if (favoriteDay == "Wednesday") {
+      console.log("Their favorite day is Wednesday.");
+    } else if (favoriteDay == "Thursday") {
+      console.log("Their favorite day is Tuesday.");
+    } else if (favoriteDay == "Friday") {
+      console.log("Their favorite day is Friday.");
+    } else {
+      console.log("Their favorite day is on the weekend.");
+    }
+
+
+    // #2
+    // Create a switch statement from the following if statement
+    var isRaining = true;
+
+    if (isRaining == true) {
+      console.log("It is raining.");
+    } else if (isRaining == false) {
+      console.log("It is not raining.");
+    }
+
+    // #3
+    // Create a switch statement from the following if statement
+    var numberArray = [0, 1, 2, 3, 4, 5, 6];
+
+    if (numberArray.length == 10) {
+      console.log("We have 10 numbers.");
+    } else if (isRaining == false) {
+      console.log("It is not raining.");
+    }
+
+    // #4
+    // What whould we see on the console?
+    // Try to answer without uncommenting the commented console.log() commands.
+    // Answer:
+
+    var personWeight = 85;
+
+    switch (personWeight) {
+      case 85.5:
+        // console.log("1");
+        break;
+      case "85":
+        // console.log("2");
+        break;
+      default:
+        // console.log("3");
+        break;
+    }
+
+
+    // #5
+    // What whould we see on the console?
+    // Try to answer without uncommenting the commented console.log().
+    // Answer:
+
+    var numbers = [10, 20, 30, 40, 50];
+
+    for (var i = 0; i < numbers.length; i = i + 1) {
+      // console.log(numbers[i] * 10);
+    }
+
+    // #6
+    // What whould we see on the console?
+    // Try to answer without uncommenting the commented console.log() commands.
+    // Answer:
+
+    var codes = ["D", "P", "D", "P", "D", "Party"];
+
+    for (var i = 0; i < codes.length; i++) {
+      switch (codes[i]) {
+        case "D":
+          //console.log("Disco");
+          break;
+        case "P":
+          //console.log("Party");
+          break;
+      }
+    }
+
+
+    // #7
+    // What whould we see on the console?
+    // Try to answer without uncommenting the commented console.log() commands.
+    // Answer:
+
+    var foods = ["hamburger", "pizza", "pasta"];
+    foods.push("fish");
+
+    switch (foods[foods.length - 1]) {
+      case "hamburger":
+        //console.log("1");
+        break;
+      case "pizza":
+        //console.log("2");
+        break;
+      case "pasta":
+        //console.log("3");
+        break;
+      case "fish":
+        //console.log("4");
+        break;
+      default:
+      //console.log("5")
+    }
+
+    // #8
+    // What whould we see on the console?
+    // Try to answer without uncommenting the commented console.log() commands.
+    // Answer:
+
+    var favoriteFoods = ["cheeseburger", "chilaquiles", "pasta"];
+
+    if (favoriteFoods.length == 3) {
+      favoriteFoods.push("fish");
+    }
+
+    if (favoriteFoods.includes("fish")) {
+      favoriteFoods.push("chips");
+    }
+
+    var counter = 0;
+    for (var i = 0; i < favoriteFoods.length; i += 1) {
+      if (favoriteFoods[i].charAt(0) == "c") {
+        counter++;
+      }
+    }
+
+    switch (counter) {
+      case 3:
+        //console.log("3");
+        break;
+      case 4:
+        //console.log("4");
+        break;
+      case 5:
+        //console.log("5");
+        break;
+    }
+
+    // #9
+    // What whould we see on the console?
+    // Try to answer without uncommenting the commented console.log() commands.
+    // Answer:
+
+    var sentenceString = "this is a nice day";
+
+    var sencenceArray = sentenceString.split(" ");
+
+    sencenceArray[4] = sencenceArray[4].replaceAll("y", "te");
+
+    var word = "   date    ";
+
+    if (word.trim() == sencenceArray[4]) {
+      // console.log("1")
+    } else {
+      // console.log("2")
+    }
+
+
+  </script>
+</body>
+
+</html>
