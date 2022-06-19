@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <script>
+
+    // Using of "or" - ||
+    // If English class grade or math class grade is 5, log "At lease one of it is 5"
+    // In other cases "None of it is 5"
+    var englishGrade = 5;
+    var mathGrade = 4;
+
+    if (englishGrade == 5 || mathGrade == 5) {
+      console.log("At lease one of it is 5");
+    } else {
+      console.log("None of it is 5");
+    }
+
+
+    // Data types:
+    // string: var color = "red";
+    // number: var age = 18;
+    // boolean: var isRaining = true;
+    // a boolean has 2 possible values: true/false
+
+    var isRaining = true;
+
+    if (isRaining == true) {
+      console.log("It is raining");
+    } else {
+      console.log("It is not raining");
+    }
+
+
+    // If the value of isWindy is false, log "There is no wind"
+    var isWindy = false;
+
+    if (isWindy == false) {
+      console.log("There is no wind");
+    }
+
+
+    // Arrays
+    // We use brackets
+    var englishGrades = [];
+    var germanGrades = [1];
+    var mathGrades = [1, 3, 4, 2];
+
+    // Log 1st element (indexing start from 0)
+    console.log(mathGrades[0]);
+
+    // Log 3rd element
+    console.log(mathGrades[2]);
+
+    // Length of array
+    console.log(mathGrades.length);
+
+    // We can also get the length of strings
+    var andika = "smart";
+    console.log(andika.length);
+
+  </script>
+</body>
+
+</html>
