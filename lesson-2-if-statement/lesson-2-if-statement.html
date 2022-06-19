@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <script>
+
+        // if statement (álltás)
+
+        // akkor hajt végre valamit, ha a feltétel igaz
+        // Syntax:
+        // 1. if word
+        // 2. statement between paranthesis
+        // 3. block for the commands (if the statement is true, then the commands will be executed)
+
+        // operators to compare numbers: >, <, ==, !=, >=, <= 
+
+        if (1 > 3) {
+            console.log("1 is greater than 3")
+        }
+
+        if (1 == 1) {
+            console.log("1 is equal with 1")
+        }
+
+        if (1 != 1) {
+            console.log("1 is not equal with 1")
+        }
+
+        if (3 >= 3) {
+            console.log("3 is equal or greater than 3")
+        }
+
+        var number = 1;
+
+        if (number == 1) {
+            console.log("number is equal with 1")
+        }
+
+
+        // A variable contains a month.
+        // If the variable is 10, log October.
+        var month = 10;
+
+        if (month == 10) {
+            console.log("October")
+        }
+
+
+        // A variable contains the grade of a pupil.
+        // If it is 5, then log: "Yay, it is 5."
+        var grade = 5;
+
+        if (grade == 5) {
+            console.log("Yay, it is 5.")
+        };
+
+
+        // A variable contains the English grade of a pupil.
+        // If the value of the grade is not 5, then log: "I haven't got 5 for English."
+        var englishGrade = 3;
+
+        if (englishGrade != 5) {
+            console.log("I haven't got 5 for English.")
+        };
+
+
+        // A variable contains the math grade of a pupil.
+        // If the value of the grade is larger than 1, then log: "I haven't failed the math class."
+        var mathGrade = 2;
+
+        if (mathGrade > 1) {
+            console.log("I haven't failed the math class.")
+        };
+
+
+        // Add the English and math grade. Log the number.
+        console.log(englishGrade + mathGrade);
+
+
+        if (englishGrade > 1) {
+            console.log("English passed");
+        }
+
+        if (mathGrade == 1) {
+            console.log("English failed");
+        }
+
+
+        // If the statement is not true, then the else block will be executed.
+        if (englishGrade > 1) {
+            console.log("Passed");
+        } else {
+            console.log("Failed");
+        }
+
+
+        // If the grade is 5, log "Congrats". In other cases log "Shame".
+        var artClassGrade = 4;
+
+        if (artClassGrade == 5) {
+            console.log("Congrats")
+        }
+        else {
+            console.log("Shame")
+        };
+
+
+        // If we want more statements to be true, then we connect them with && symbols.
+        if (artClassGrade == 5 && englishGrade == 5) {
+            console.log("very good")
+        }
+        else {
+            console.log("good")
+        };
+
+
+
+    </script>
+</body>
+
+</html>
