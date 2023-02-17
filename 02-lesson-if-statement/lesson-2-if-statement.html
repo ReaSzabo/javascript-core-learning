@@ -1,124 +1,232 @@
-<html>
+<script>
 
-<head>
-    <meta charset="UTF-8" />
-</head>
+    // IF STATEMENT
 
-<body>
-    <script>
+    // Block is executed if the statement is true.
+    // Syntax:
+    // 1. if word
+    // 2. statement between paranthesis
+    // 3. block for the commands (if the statement is true, then the commands will be executed)
 
-        // if statement
+    // operators to compare numbers: >, <, ==, !=, >=, <= 
 
-        // Block is executed if the statement is true.
-        // Syntax:
-        // 1. if word
-        // 2. statement between paranthesis
-        // 3. block for the commands (if the statement is true, then the commands will be executed)
+    if (1 > 3) {
+        console.log("1 is greater than 3")
+    }
 
-        // operators to compare numbers: >, <, ==, !=, >=, <= 
+    if (1 == 1) {
+        console.log("1 is equal with 1")
+    }
 
-        if (1 > 3) {
-            console.log("1 is greater than 3")
-        }
+    if (1 != 1) {
+        console.log("1 is not equal with 1")
+    }
 
-        if (1 == 1) {
-            console.log("1 is equal with 1")
-        }
+    if (3 >= 3) {
+        console.log("3 is equal or greater than 3")
+    }
 
-        if (1 != 1) {
-            console.log("1 is not equal with 1")
-        }
+    if (10 - 3 > 2) {
+        console.log("10-3 is equal or greater than 2")
+    }
 
-        if (3 >= 3) {
-            console.log("3 is equal or greater than 3")
-        }
+    if (1 + 3 == 4) {
+        console.log("1+3 is equal to 4")
+    }
 
-        var number = 1;
+    if (10 / 2 == 5) {
+        console.log("10 / 3 is equal to 5")
+    }
 
-        if (number == 1) {
-            console.log("number is equal with 1")
-        }
+    if (10 / 2 == 5) {
+        console.log("10 / 3 is equal to 5")
+    }
 
-
-        // A variable contains a month.
-        // If the variable is 10, log October.
-        var month = 10;
-
-        if (month == 10) {
-            console.log("October")
-        }
-
-
-        // A variable contains the grade of a pupil.
-        // If it is 5, then log: "Yay, it is 5."
-        var grade = 5;
-
-        if (grade == 5) {
-            console.log("Yay, it is 5.")
-        };
-
-
-        // A variable contains the English grade of a pupil.
-        // If the value of the grade is not 5, then log: "I haven't got 5 for English."
-        var englishGrade = 3;
-
-        if (englishGrade != 5) {
-            console.log("I haven't got 5 for English.")
-        };
-
-
-        // A variable contains the math grade of a pupil.
-        // If the value of the grade is larger than 1, then log: "I haven't failed the math class."
-        var mathGrade = 2;
-
-        if (mathGrade > 1) {
-            console.log("I haven't failed the math class.")
-        };
-
-
-        // Add the English and math grade, log the number.
-        console.log(englishGrade + mathGrade);
-
-
-        if (englishGrade > 1) {
-            console.log("English passed");
-        }
-
-        if (mathGrade == 1) {
-            console.log("English failed");
-        }
-
-
-        // If the statement is not true, then the else block will be executed.
-        if (englishGrade > 1) {
-            console.log("Passed");
-        } else {
-            console.log("Failed");
-        }
-
-
-        // If the grade is 5, log "Congrats". In other cases log "Shame".
-        var artClassGrade = 4;
-
-        if (artClassGrade == 5) {
-            console.log("Congrats")
-        }
-        else {
-            console.log("Shame")
-        };
-
-
-        // If we want more statements to be true, then we connect them with && symbols.
-        if (artClassGrade == 5 && englishGrade == 5) {
-            console.log("very good")
-        }
-        else {
-            console.log("good")
-        };
+    if (10 % 2 == 0) {
+        console.log("The remainder of 10/3 is equal to 5")
+    }
 
 
 
-    </script>
-</body>
+    // exercises 
+    // 1. Vizsgáld meg, hogy 9+6 nagyobb-e, mint 11. Ha igen írd ki a konzolra: "9+6 nagyobb, mint 11."
+    // 2. Vizsgáld meg, hogy 99+66 kisebb-e, mint 150. Ha igen írd ki a konzolra: "99+66 kisebb, mint 150."
+    // 3. Vizsgáld meg, hogy 8*8 nagyobb vagy egyenlő-e 64-gyel. Ha igen írd ki a konzolra: "8*8 nagyobb vagy egyenlő 64-gyel."
+    // 4. Vizsgáld meg, hogy 100 osztva 5-tel nmaradéka 0-e. Ha igen írd ki a konzolra: "100 osztható 5-tel."
 
-</html>
+
+
+
+
+
+
+    // VARIABLES
+
+
+
+    var number = 1;
+
+    if (number == 1) {
+        console.log("number is equal with 1")
+    }
+
+
+
+    // The month variable contains a number that represents a month.
+    // If the variable is 10, log October.
+    var month = 10;
+
+    if (month == 10) {
+        console.log("October")
+    }
+
+
+
+    // The grade variable contains a number that represents a grade.
+    // If it is 5, then log: "Yay, it is 5."
+    var grade = 5;
+
+    if (grade == 5) {
+        console.log("Yay, it is 5.")
+    };
+
+
+
+    // The "englishGrade" variable contains a number that represents a grade of a pupil.
+    // If the value of the grade is not 5, then log: "I haven't got 5 for English."
+    var englishGrade = 3;
+
+    if (englishGrade != 5) {
+        console.log("I haven't got 5 for English.")
+    };
+
+
+
+    // The "mathGrade" variable contains a number that represents a grade of a pupil.
+    // If the value of the grade is larger than 1, then log: "I haven't failed the math class."
+    var mathGrade = 2;
+
+    if (mathGrade > 1) {
+        console.log("I haven't failed the math class.")
+    };
+
+
+    // Write "English passed" if the englishGrade is larger than 1.
+    if (englishGrade > 1) {
+        console.log("English passed");
+    }
+
+    // Write "English failed" if the englishGrade is 1.
+    if (mathGrade == 1) {
+        console.log("English failed");
+    }
+
+    // Write "The sky is blue." if the skyColor is "blue".
+    var skyColor = "blue";
+    if (skyColor == "blue") {
+        console.log("The sky is blue.");
+    }
+
+    // exercises 
+    // 5. Hozz létre egy változót "angolJegy" névvel. Adj neki egy tetszőleges kezdőértéket. Vizsgáld meg, hogy a "angolJegy" változó értéke 5-e. Ha igen írd ki: "A tanuló jelest kapott"!
+    // 6. Hozz létre egy változót "matekJegy" névvel. Adj neki egy tetszőleges kezdőértéket. Vizsgáld meg, hogy a "matekJegy" változó értéke 1-e. Ha igen írd ki: "A tanuló megbukott"!
+
+
+
+
+
+
+
+    // ELSE
+
+
+    // If the statement is not true, then the else block will be executed.
+    if (englishGrade > 1) {
+        console.log("Passed");
+    } else {
+        console.log("Failed");
+    }
+
+
+    // If the grade is 5, log "Congrats". In other cases log "Shame".
+    var artClassGrade = 4;
+
+    if (artClassGrade == 5) {
+        console.log("Congrats")
+    }
+    else {
+        console.log("Shame")
+    };
+
+    // exercises 
+    // 7. Hozz létre egy változót "nemetJegy" névvel. Adj neki egy tetszőleges kezdőértéket. Vizsgáld meg, hogy a "nemetJegy" változó értéke 1-e. Ha igen írd ki: "A tanuló megbukott"! Egyébként írd ki: "A tanuló átment"!
+    // 8. Hozz létre egy változót "nap" névvel. Adj neki egy tetszőleges kezdőértéket 1 és 7 között. 
+    // Vizsgáld meg, hogy a "nap" változó értéke 1-e. Ha igen írd ki: "Az aktuális nap hétfő"! Egyébként írd ki: "Nem hétfő van."!
+
+
+
+
+
+
+
+    // ELSE IF
+    var day = 3;
+    if (day == 1) {
+        console.log("Monday");
+    } else if (day == 2) {
+        console.log("Tuesday");
+    } else if (day == 3) {
+        console.log("Wednesday");
+    } else if (day == 4) {
+        console.log("Thursday");
+    } else if (day == 5) {
+        console.log("Friday");
+    } else if (day == 6) {
+        console.log("Saturday");
+    } else if (day == 7) {
+        console.log("Sunday");
+    }
+
+
+
+
+
+
+
+    // AND OPERATOR (&&)
+
+    // If we want more statements to be true, then we connect them with && symbols.
+    if (artClassGrade == 5 && englishGrade == 5) {
+        console.log("very good")
+    }
+    else {
+        console.log("good")
+    };
+
+    // exercises 
+    // 9. Hozz létre 3 változót! A nevük legyen: jegy1, jegy2, jegy3! Adj nekik 1 és 5 közötti értéket!
+    // Vizsgáld meg, hogy mindhárom jegy értéke 5-e!
+    // Ha mind a három 5-ös, akkor írd ki: "A tanuló kitűnő."!
+    // Egyébként írd ki: "A tanuló nem kitűnő."!
+
+
+
+
+    // OR OPERATOR (&&)
+
+    // If we want one of the statements to be true, then we connect them with || symbols.
+    if (artClassGrade == 5 || englishGrade == 5) {
+        console.log("At least one grade is 5.")
+    }
+    else {
+        console.log("None of the grades are 5.")
+    };
+
+    // exercises 
+    // 10. Hozz létre 3 változót! A nevük legyen: szin1, szin2, szin3! Adj nekik értékeket! (Három szín legyen string-ként)
+    // Vizsgáld meg, legalább egy szín fekete-e!
+    // Ha igen, írd ki: "Feketét is hord"!
+    // Egyébként írd ki: "Nem hord fekete ruhát"!
+
+
+</script>
