@@ -1,0 +1,17 @@
+A verzókezelés kicsit érthetőbben:
+- Kóku dolgozik egy honlap “Kapcsolat” aloldalán hétfőn, megadja az email, telefon elérhetőséget.
+- Ha végez hétfő este feltölti a közös tárhelyre.
+- Bence folytatja a “Kapcsolat” aloldalt kedd reggel, ő fogja feltüntetni  a cég címét.
+- Bence nem akarja a nulláról kezdeni a munkát, ezért letölti a közös tárhelyről a Kóku által elkezdett “Kapcsolat” aloldalt.
+- Ezt fogja kiegészíteni az ő munkájával.
+- Ha végzett kedd este, akkor feltölti az aloldal legfrissebb verzióját, ami már tartalmazza az email és telefonelérhetőségeket és a címet is.
+- Andi szerda reggel letölti ezt a friss verziót és folytatja a munkát, hozzáad a “Kapcsolat” aloldalhoz egy térképet, amin egy nyíl jelöli, hogy melyik utcán található a cég székhelye.
+- Ha végez, akkor szerda este feltölti a munkáját a közös tárhelyre. A “Kapcsolat” aloldalnak már lesz email, telefon elérhetősége, címe és egy térkép modulja is.
+- Csütörtök reggel meg is lehet mutatni az ügyfélnek a “Kapcsolat” aloldalt.
+
+Ez a legideálisabb eset.
+
+De mi van, ha kedd reggelre kell elkészülni mindennel? Akkor Kóku, Bence és Andi letöltik az üres “Kapcsolat” aloldal kódját. Mindenki elkezd külön dolgozni. Hétfő este pedig feltöltik a kódot úgy, hogy “egybeolvadjon”.
+Ezt az egybeolvadást a git (verziókezdelő) nagyon okosan meg tudja csinálni. Ha bizonytalan benne, hogy melyik sor hová kerüljön a kódban, akkor pedig megkérdezi azt, aki elindította az egybeolvasztást (angolul merge).
+
+A való életben egyébként a projekt vezetője figyel arra, hogy ne dolgozzon egyszerre több ember ugyanazon az oldalon. Kóku dolgozzon a weboldal menüpontjain, Bence a főoldalon, Andi meg csinálhatja a Kapcsolat aloldalt. Ebben az esetben nem áll fenn a veszély, hogy az összeolvasztás során valamit elront a rendszer és bug keletkezik.
