@@ -1,15 +1,15 @@
 <script>
 
-// 1. feladat
+  // 1. feladat
   // "vagy" használata - ||
   // Ha a magyarJegy vagy nyelvtanJegy vagy a matekJegy 5-ös, írd ki "Legalább egy jegy ötös", egyébként "Egyik sem 5-ös" !
 
   var magyarJegy = 1;
   var nyelvtanJegy = 4;
   var matekJegy = 2;
-if(magyarJegy == 5 || nyelvtanJegy == 5 || matekJegy == 5){
-  console.log("Legalább egy jegy ötös");
-}
+  if (magyarJegy == 5 || nyelvtanJegy == 5 || matekJegy == 5) {
+    console.log("Legalább egy jegy ötös");
+  }
 
 
 
@@ -20,51 +20,61 @@ if(magyarJegy == 5 || nyelvtanJegy == 5 || matekJegy == 5){
   var andiEhes = true;
   var mateEhes = true;
 
-if(andiEhes == 1 && mateEhes ==1){
-  console.log("Elmegyünk enni.");
-}
-else{
-  onsole.log("Még nem eszünk.");
-}
+  if (andiEhes == 1 && mateEhes == 1) {
+    console.log("Elmegyünk enni.");
+  }
+  else {
+    onsole.log("Még nem eszünk.");
+  }
+
+  // MÁTÉ KOMMENT: 
+  // 1. Ebben az esetben nem számokkal kell összehasonlítani a változókat, hanem boolean értékekkel pl. true. Egyébként így is lefut, mert az összehasonlításnál a számok átalakulnak. 0-ból false lesz, minden más számból pedig true. De nem használjuk így, mert nem tesz jót a kód olvashatóságnak.
+  // 2. Van egy elírás az else ágban.
 
 
 
- // 3. feladat 
+  // 3. feladat 
   // Ha a kutya éhes és 11 óra van, akkor írd ki: "Még nem adok a kutyának enni."!
   // Ha a kutya éhes és 12 óra van, akkor írd ki "Adok enni a kutyának."!
   // Egyébként írd ki: "Nem csinálok semmit."!
 
   var kutyaEhes = false;
   var ora = 12;
-if(kutyaEhes == 1 && ora == 11){
-console.log("Még nem adok a kutyának enni.");
-}
-else if(kutyaEhes == 1 && ora == 11){
-  console.log("Adok enni a kutyának.");
-}
-else{
-  console.log("Nem csinálok semmit.");
-}
+  if (kutyaEhes == 1 && ora == 11) {
+    console.log("Még nem adok a kutyának enni.");
+  }
+  else if (kutyaEhes == 1 && ora == 11) {
+    console.log("Adok enni a kutyának.");
+  }
+  else {
+    console.log("Nem csinálok semmit.");
+  }
+
+  // MÁTÉ KOMMENT: 
+  // 1. Ebben az esetben nem számokkal kell összehasonlítani a változókat, hanem boolean értékekkel pl. true
 
 
 
-// 4. feladat
+
+  // 4. feladat
   // Adott egy "szamlalo" nevű változó.
   // Ha a számláló értéke nagyobb, mint 10, akkor legyen a számláló értéke eggyel megnövelve.
   // Ha a számláló értéke kisebb, vagy egyenlő 10-zel, akkor az értéke legyen 5!
 
   var szamlalo = 10;
-  if(szamlalo>10){
-    szamla+=1;
+  if (szamlalo > 10) {
+    szamla += 1;
   }
-  else{
-    szamlalo=5;
+  else {
+    szamlalo = 5;
   }
   console.log(szamlalo);
 
 
 
-// 5. feladat
+
+
+  // 5. feladat
   // Adott egy "konzervSuly" nevű változó.
   // A kezdeti értéke 500 gramm.
   // A konzerv tulajdonosának van egy macskája és egy kutyája.
@@ -77,14 +87,14 @@ else{
   var konzervSuly = 500;
   var logyuliEhes = true;
   var cicaEhes = true;
-  if(logyuliEhes == 1 && cicaEhes == 1){
-    konzervSuly=200;
+  if (logyuliEhes == 1 && cicaEhes == 1) {
+    konzervSuly = 200;
   }
-  else if(logyuliEhes == 1 && cicaEhes == 0){
-    konzervSuly=300;
+  else if (logyuliEhes == 1 && cicaEhes == 0) {
+    konzervSuly = 300;
   }
-  else if(logyuliEhes == 0 && cicaEhes == 1){
-    konzervSuly=400;
+  else if (logyuliEhes == 0 && cicaEhes == 1) {
+    konzervSuly = 400;
   }
   console.log(konzervSuly);
 
@@ -92,7 +102,7 @@ else{
 
 
 
-// 6. feladat
+  // 6. feladat
   // Adott egy uzenet nevű string változó.
   // Írd ki a konzolra a hosszát!
 
@@ -113,14 +123,19 @@ else{
   // Mi az alábbi tömb hossza/mérete/elemeinek száma?
   // var tomb = [1,2,3,4];
   // Szerintem a hossza ennyi: 4
-	 Elemeinek száma:4
+  // Elemeinek száma: 4
 
-   // 9. feladat
+
+
+
+  // 9. feladat
   // Írd ki a konzolra a "matekJegyek" tömb hosszát!
 
   var matekJegyek = [1, 3, 4, 2, 5, 3, 1, 5];
   var length = matekJegyek.length;
   console.log(length);
+
+
 
 
   // 10. feladat
@@ -129,13 +144,13 @@ else{
   // Ha igen, akkor írd ki: "Jó kezdés"!
 
   var rajzJegyek = [5, 3];
-  if(rajzJegyek[0] == 5){
+  if (rajzJegyek[0] == 5) {
     console.log("Jó kezdés");
   }
 
 
 
- // 11. feladat
+  // 11. feladat
   // Egy hallgató egy igaz-hamis feladatsort oldott meg.
   // A feladatsorban 3 kérdés volt, erre 3 igaz/hamis választ adott.
   // A válaszokat tömbben tároltuk el.
@@ -144,12 +159,17 @@ else{
   //akkor írd ki: "Ügyes", egyébként írd ki: "Süsü" !
 
   var hallgatoValaszai = [true, true, true];
-  if(hallgatoValaszai[0] == 1 && hallgatoValaszai[1] == 1 && hallgatoValaszai[2] == 1){
+  if (hallgatoValaszai[0] == 1 && hallgatoValaszai[1] == 1 && hallgatoValaszai[2] == 1) {
     console.log("Ügyes");
   }
-  else{
-	console.log("Süsü");
+  else {
+    console.log("Süsü");
   }
+
+  // MÁTÉ KOMMENT: 
+  // 1. Ebben az esetben nem számokkal kell összehasonlítani a változókat, hanem boolean értékekkel pl. true
+
+
 
 
 
@@ -164,11 +184,10 @@ else{
   var polgarJogJegy = 1;
   var romaiJogJegy = 1;
 
-  if (polgarJogJegy+romaiJogJegy == 2) {
+  if (polgarJogJegy + romaiJogJegy == 2) {
     console.log("Mindkettőből megbukott.");
   }
 
-</script>
-</body>
+  // Szép munka
 
-</html>
+</script>
