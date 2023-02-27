@@ -1,162 +1,155 @@
-<html>
+<script>
 
-<head>
-  <meta charset="UTF-8" />
-</head>
+  // Single line comment
 
-<body>
-  <script>
+  /*
+    Multi
+    line
+    comment
+  */
 
-    // Single line comment
+  /* Multiline comment can be only 1 line, too */
 
-    /*
-      Multi
-      line
-      comment
-    */
+  // Index
+  // Indexing starts from 0, so the index 2 marks the 3rd element
 
-    /* Multiline comment can be only 1 line, too */
-
-    // Index
-    // Indexing starts from 0, so the index 2 marks the 3rd element
-
-    var array = [3, 4, 1];
-    console.log(array[2]);
+  var array = [3, 4, 1];
+  console.log(array[2]);
 
 
-    // We can use a variable as index
+  // We can use a variable as index
 
-    var index = 2;
-    console.log(array[index]);
+  var index = 2;
+  console.log(array[index]);
 
-    var array = [1, 2, 3, 4, 5]
+  var array = [1, 2, 3, 4, 5]
 
-    console.log(array[4])
+  console.log(array[4])
 
-    console.log(array.length) // 5
+  console.log(array.length) // 5
 
-    console.log(array.length - 1) // 4
-
-
-    var array = [1, 2, 3, 4, 5]
-
-    console.log(array[4])
-
-    console.log(array.length) // 5
-
-    console.log(array.length - 1) // 4
+  console.log(array.length - 1) // 4
 
 
-    // To get the last element of an array, we use the length-1 index
+  var array = [1, 2, 3, 4, 5]
 
-    var lastIndex = array.length - 1;
+  console.log(array[4])
 
-    console.log(array[array.length - 1]);
+  console.log(array.length) // 5
 
-    console.log(array[lastIndex]);
+  console.log(array.length - 1) // 4
 
 
-    // Get the 2nd last element
-    var array2 = [66, 1, 2, 3, 4, 5]
+  // To get the last element of an array, we use the length-1 index
 
-    console.log(array2[array2.length - 2])
+  var lastIndex = array.length - 1;
+
+  console.log(array[array.length - 1]);
+
+  console.log(array[lastIndex]);
+
+
+  // Get the 2nd last element
+  var array2 = [66, 1, 2, 3, 4, 5]
+
+  console.log(array2[array2.length - 2])
 
 
 
-    // For loop
-    // Syntax:
-    // 1. for keyword
-    // 2. Paranthesis
-    // 3. 3 expressions
-    //    a. Declare the cycle variable
-    //    b. Set a statement that breaks the loop
-    //    c. Set an expression that moves the loop
+  // For loop
+  // Syntax:
+  // 1. for keyword
+  // 2. Paranthesis
+  // 3. 3 expressions
+  //    a. Declare the cycle variable
+  //    b. Set a statement that breaks the loop
+  //    c. Set an expression that moves the loop
 
 
-    var number = 4;
+  var number = 4;
 
-    number = 5;
+  number = 5;
 
-    number = number + 1;
+  number = number + 1;
 
-    // 5 times "something"
-    console.log("For loop #1:");
-    for (var n = 0; n < 5; n = n + 1) {
-      console.log("something");
-    }
+  // 5 times "something"
+  console.log("For loop #1:");
+  for (var n = 0; n < 5; n = n + 1) {
+    console.log("something");
+  }
 
-    // The most common cycle variable is "i"
+  // The most common cycle variable is "i"
 
-    // Numbers 0-4
-    console.log("For loop #2:");
-    for (var i = 0; i < 5; i = i + 1) {
-      console.log(i);
-    }
-
-
-
-    // Numbers 0-9
-    console.log("For loop #3:");
-    for (var i = 0; i < 10; i = i + 1) {
-      console.log(i);
-    }
-
-
-    // Numbers 0-2
-    console.log("For loop #4:");
-    for (var i = 0; i < 3; i = i + 1) {
-      console.log("Index: " + i);
-    }
+  // Numbers 0-4
+  console.log("For loop #2:");
+  for (var i = 0; i < 5; i = i + 1) {
+    console.log(i);
+  }
 
 
 
-    // Multiples of 5: 0, 5, 10, 15, ...
-    console.log("For loop #5:");
-    for (var i = 0; i < 10; i = i + 1) {
-      console.log(i * 5);
-    }
+  // Numbers 0-9
+  console.log("For loop #3:");
+  for (var i = 0; i < 10; i = i + 1) {
+    console.log(i);
+  }
+
+
+  // Numbers 0-2
+  console.log("For loop #4:");
+  for (var i = 0; i < 3; i = i + 1) {
+    console.log("Index: " + i);
+  }
 
 
 
-    // Every 2nd number under 10
-    console.log("For loop #6:");
-    for (var i = 0; i < 10; i = i + 2) {
-      console.log(i);
-    }
-
-    // Squares of numbers
-    console.log("For loop #7:");
-    for (var i = 0; i < 4; i = i + 1) {
-      console.log(i * i);
-    }
+  // Multiples of 5: 0, 5, 10, 15, ...
+  console.log("For loop #5:");
+  for (var i = 0; i < 10; i = i + 1) {
+    console.log(i * 5);
+  }
 
 
-    // Elements of array
-    var numbers = [4, 2, 6, 8, 9];
 
-    // Log array elemets with the traditional values
-    console.log("Example #8:");
-    console.log(numbers[0]); // index is 0
-    console.log(numbers[1]); // 1
-    console.log(numbers[2]); // 2
-    console.log(numbers[3]);
-    console.log(numbers[4]);
+  // Every 2nd number under 10
+  console.log("For loop #6:");
+  for (var i = 0; i < 10; i = i + 2) {
+    console.log(i);
+  }
 
-    // Log elements with for loop
-    console.log("For loop #8:");
-    for (var i = 0; i < 5; i = i + 1) {
-      console.log(numbers[i]);
-    }
+  // Squares of numbers
+  console.log("For loop #7:");
+  for (var i = 0; i < 4; i = i + 1) {
+    console.log(i * i);
+  }
 
 
-    // Elements of array v2
-    var numbers2 = [5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19];
+  // Elements of array
+  var numbers = [4, 2, 6, 8, 9];
+
+  // Log array elemets with the traditional values
+  console.log("Example #8:");
+  console.log(numbers[0]); // index is 0
+  console.log(numbers[1]); // 1
+  console.log(numbers[2]); // 2
+  console.log(numbers[3]);
+  console.log(numbers[4]);
+
+  // Log elements with for loop
+  console.log("For loop #8:");
+  for (var i = 0; i < 5; i = i + 1) {
+    console.log(numbers[i]);
+  }
 
 
-    console.log("For loop #8 v2:");
-    for (var i = 0; i < numbers2.length; i = i + 1) {
-      console.log(numbers2[i]);
-    }
+  // Elements of array v2
+  var numbers2 = [5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19, 5, 14, 12, 19];
+
+
+  console.log("For loop #8 v2:");
+  for (var i = 0; i < numbers2.length; i = i + 1) {
+    console.log(numbers2[i]);
+  }
 
 
     // Shorthand version of arithmetic operations
@@ -169,7 +162,4 @@
     // i--;
 
 
-  </script>
-</body>
-
-</html>
+</script>
