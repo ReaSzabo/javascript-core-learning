@@ -128,8 +128,8 @@
     // 16. feladat (nem kódolós)
     // Szerinted mire jó a "git"? (A saját szavaiddal.)
     // Válasz:
-    // Olyan szolgáltatás ahol megoszthatjuk a codjainkat másokkal. 
-    //Beállítás szerint másokkal együtt is dolgozhatunk codjainkon/projektjeinken. 
+    // Olyan szolgáltatás ahol megoszthatjuk a kódjainkat másokkal. 
+    //Beállítás szerint másokkal együtt is dolgozhatunk kódjainkon/projektjeinken. 
     //Segítségével képesek vagyunk a kódunk korábbi mentett verzióhoz visszatérni és akár korábról folytatni a kódolást. 
 
     // 17. feladat (nem kódolós)
