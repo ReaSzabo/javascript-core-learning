@@ -1,112 +1,121 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-  </head>
-  <body>
-    <script>
 
-      // Stringekkel találkozhatunk az alábbi esetekben.
-      // Úgynevezett string literálként (két macskaköröm között):
-      console.log("Csá");
+<head>
+  <meta charset="UTF-8" />
+</head>
 
-      // Egy változó értékeként:
-      var koszones = "Szevasz";
-      console.log(koszones);
+<body>
+  <script>
 
-      // Tömb elemeiként:
-      var szavak = ["Heló", "Helóka", "Szervusz"];
-      for(var i=0; i<szavak.length; i++) {
-        console.log(szavak[i]);
-      }
+    // Stringekkel találkozhatunk az alábbi esetekben.
+    // Úgynevezett string literálként (két macskaköröm között):
+    console.log("Csá");
 
-      /////////////// CONCATENATION /////////////////
+    // Egy változó értékeként:
+    var koszones = "Szevasz";
+    console.log(koszones);
 
-      // A stringekkel különböző műveleteket hajthatunk végre.
-      // Például összefűzhetjük őket.
-      // Angolul concatenation. Magyarul is gyakran mondjuk konkatenációnak.
-      var string1 = "Szia";
-      var string2 = "Andi";
-      
-      var ujString = string1 + " " + string2; // Szia Andi
-      var ujString2 = string1 + " Uram"; // Szia Uram
-      var ujString3 = "Vágod" + " Csótány?"; // Vágod Csótány?
+    // Tömb elemeiként:
+    var szavak = ["Heló", "Helóka", "Szervusz"];
+    for (var i = 0; i < szavak.length; i++) {
+      console.log(szavak[i]);
+    }
 
+    /////////////// CONCATENATION /////////////////
 
+    // A stringekkel különböző műveleteket hajthatunk végre.
+    // Például összefűzhetjük őket.
+    // Angolul concatenation. Magyarul is gyakran mondjuk konkatenációnak.
+    var string1 = "Szia";
+    var string2 = "Andi";
 
-      // Fűzzük össze egy tömb elemeit!
-      var szavak = ["A ", "kis ", "Vuk "];
-
-      // A szavakat egy "mondat" változóban fogjuk egyesíteni.
-      var mondat = ""; // Először legyen az értéke üres string.
-
-      for(var i = 0; i < szavak.length; i++) {
-        mondat = mondat + szavak[i];
-      }
-
-      console.log(mondat);
-
-      // Mi van, ha a nincs space a szavak végén?
-
-      /////////////// CHARACTER AT /////////////////
-
-      // Vehetjük egy string valahanyadik karakterét.
-      // Ehhez a charAt() metódust használjuk.
-      var myString = "Andi sminkel."
-
-      console.log(myString.charAt(0)); // "A"
-      console.log(myString.charAt(1)); // "n"
-      console.log(myString.charAt(2)); // "d"
-      console.log(myString.charAt(3)); // "i"
-      console.log(myString.charAt(4)); // " " - itt egy space-t ír ki
-      console.log(myString.charAt(5)); // "s"
-      console.log(myString.charAt(6)); // "m"
-      console.log(myString.charAt(7)); // "i"
-      console.log(myString.charAt(8)); // "n"
-      console.log(myString.charAt(9)); // "k"
-      console.log(myString.charAt(10)); // "e"
-      console.log(myString.charAt(11)); // "l"
-      console.log(myString.charAt(12)); // "."
-
-      // Írjuk ki az utolsó karaktert.
-      // A string hossza 13, az utolsó elem a 12-ik.
-      console.log(myString.charAt(12)); // .
-
-      // Ezt kiírathatjuk akkor is, ha nem tudjuk, hogy hány karakter hosszúságú a string.
-      // Az esetünkben szükséges 12-es számot megkapjuk, ha a string hosszából kivonunk egyet.
-      console.log( myString.charAt( myString.length - 1 ) ); // .
+    var ujString = string1 + " " + string2; // Szia Andi
+    var ujString2 = string1 + " Uram"; // Szia Uram
+    var ujString3 = "Vágod" + " Csótány?"; // Vágod Csótány?
 
 
-      console.log("MC Hawer".charAt(5)); // w
+
+    // Fűzzük össze egy tömb elemeit!
+    var szavak = ["A ", "kis ", "Vuk "];
+
+    // A szavakat egy "mondat" változóban fogjuk egyesíteni.
+    var mondat = ""; // Először legyen az értéke üres string.
+
+    for (var i = 0; i < szavak.length; i++) {
+      mondat = mondat + szavak[i];
+    }
+
+    console.log(mondat);
+
+    // Mi van, ha a nincs space a szavak végén?
 
 
-      /////////////// SUBSTRING /////////////////
-      
-      // Meghatározhatjuk, hogy a string mely részére van szükségünk.
-      // A string egy darabját/részét substring-nek nevezzük.
-      // pl. az "and" string lehetséges substringjei: "", "a", "n", "d", "an", "nd", "and".
-
-      // A substring levágásához a substring() metódust használjuk.
-      // Két paramétere van, az első elem és az utolsó elem. Szóva, hogy hanyadik betűtől, hanyadik betűig tartson a substring.
-      // Pl. "Andika".substring(0,4)
-      // Ebben az esetben a string 0. karakterétől a 4. karakteréig vágjuk le a substringet.
-      // A 0. elem: A.
-      // A 4. elem: k.
-      // Fontos, hogy míg az első paraméter (esetünkben a 0.) a substring részét képezi, 
-      //   addig a második paraméter (esetünkban a 4.) már nem lesz része.
-      // Így "Andika".substring(0,4) az alábbi substringet jelöli: "Andi";
-
-      var originalString = "Karaj";
-
-      var mySubstring = originalString.substring(0,1); // A 0. karaktertől az 1. karakterig.
-      console.log(mySubstring); // "K"
-
-      console.log(originalString.substring(0,2)) // "Ka"
-      console.log(originalString.substring(0,0)) // "" - üres string
-      console.log(originalString.substring(1,3)) // "ar"
-      console.log(originalString.substring(1,4)) // "ara"
-      console.log(originalString.substring(0,5)) // "Karaj"
 
 
-    </script>
-  </body>
+    /////////////// CHARACTER AT /////////////////
+
+    // Vehetjük egy string valahanyadik karakterét.
+    // Ehhez a charAt() metódust használjuk.
+    var myString = "Andi sminkel."
+
+    console.log(myString.charAt(0)); // "A"
+    console.log(myString.charAt(1)); // "n"
+    console.log(myString.charAt(2)); // "d"
+    console.log(myString.charAt(3)); // "i"
+    console.log(myString.charAt(4)); // " " - itt egy space-t ír ki
+    console.log(myString.charAt(5)); // "s"
+    console.log(myString.charAt(6)); // "m"
+    console.log(myString.charAt(7)); // "i"
+    console.log(myString.charAt(8)); // "n"
+    console.log(myString.charAt(9)); // "k"
+    console.log(myString.charAt(10)); // "e"
+    console.log(myString.charAt(11)); // "l"
+    console.log(myString.charAt(12)); // "."
+
+    // Írjuk ki az utolsó karaktert.
+    // A string hossza 13, az utolsó elem a 12-ik.
+    console.log(myString.charAt(12)); // .
+
+    // Ezt kiírathatjuk akkor is, ha nem tudjuk, hogy hány karakter hosszúságú a string.
+    // Az esetünkben szükséges 12-es számot megkapjuk, ha a string hosszából kivonunk egyet.
+    console.log(myString.charAt(myString.length - 1)); // .
+
+
+    console.log("MC Hawer".charAt(5)); // w
+
+
+
+
+
+    /////////////// SUBSTRING /////////////////
+
+    // Meghatározhatjuk, hogy a string mely részére van szükségünk.
+    // A string egy darabját/részét substring-nek nevezzük.
+    // pl. az "and" string lehetséges substringjei: "", "a", "n", "d", "an", "nd", "and".
+
+    // A substring levágásához a substring() metódust használjuk.
+    // Két paramétere van, az első elem és az utolsó elem. Szóva, hogy hanyadik betűtől, hanyadik betűig tartson a substring.
+    // Pl. "Andika".substring(0,4)
+    // Ebben az esetben a string 0. karakterétől a 4. karakteréig vágjuk le a substringet.
+    // A 0. elem: A.
+    // A 4. elem: k.
+    // Fontos, hogy míg az első paraméter (esetünkben a 0.) a substring részét képezi, 
+    //   addig a második paraméter (esetünkban a 4.) már nem lesz része.
+    // Így "Andika".substring(0,4) az alábbi substringet jelöli: "Andi";
+
+    var originalString = "Karaj";
+
+    var mySubstring = originalString.substring(0, 1); // A 0. karaktertől az 1. karakterig.
+    console.log(mySubstring); // "K"
+
+    console.log(originalString.substring(0, 2)) // "Ka"
+    console.log(originalString.substring(0, 0)) // "" - üres string
+    console.log(originalString.substring(1, 3)) // "ar"
+    console.log(originalString.substring(1, 4)) // "ara"
+    console.log(originalString.substring(0, 5)) // "Karaj"
+
+
+  </script>
+</body>
+
 </html>
