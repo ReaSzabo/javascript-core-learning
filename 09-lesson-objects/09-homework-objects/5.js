@@ -6,3 +6,6 @@ console.log("Exercise 5");
 var circle = {
   r: 12
 }
+
+console.log("Kor kerület: " + circle.r * 2 * Math.PI)
+console.log("Kor terület: " + circle.r * circle.r * Math.PI)

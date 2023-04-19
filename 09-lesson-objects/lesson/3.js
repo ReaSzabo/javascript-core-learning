@@ -1,4 +1,3 @@
-
 ////////// STRING TÍPUS ///////////
 
 // Ezt már jól ismerjük :)
@@ -16,3 +15,12 @@ var uzenet = ` Szia
                     BR,
                     Máté `;
 
+var nev = "Bence";
+var mondat = "A nevem " + nev + ". Érted, hogy " + nev + "?";
+console.log(mondat)
+
+var mondat2 = `A nevem ${nev}. Érted, hogy ${nev}?`
+console.log(mondat2)
+
+var Koku;
+console.log(Koku);

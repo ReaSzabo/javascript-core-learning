@@ -1,2 +1,13 @@
 console.log("Exercise 1");
-// Írj ki a konzolra egy NaN, egy Infinity és egy -Infinity értéket.
+// Mit ír ki?
+
+console.log(100 / "Kóku"); // NaN
+console.log(100 * "Kóku"); // NaN
+console.log(100 - "Kóku"); // NaN
+
+console.log(100 + "Kóku"); // 100Kóku , 104
+
+console.log(100 / 0); // Infity
+console.log(100 / -0); // -Infinity
+console.log(0 / -0); // NaN
+console.log(-0 / 0); // NaN

@@ -2,7 +2,7 @@
 /************* Objektumok ****************/
 /*****************************************/
 
-// Ezek összetett adattípusok, szóval különválasztjuk a primitív adattípuoktól.
+// Ezek összetett adattípusok, szóval különválasztjuk a primitív adattípusoktól.
 
 // Egy "valamiről" van szó, ennek vannak tulajdonságai.
 // Egy objektumban ezeket gyűjtjük össze.

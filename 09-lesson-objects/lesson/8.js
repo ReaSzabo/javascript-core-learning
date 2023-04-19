@@ -3,6 +3,7 @@
 
 var kenyer = {
   szin: "barna",
+  suly: 500
 }
 
 // 2. Módosítani egy meglévő property-t:

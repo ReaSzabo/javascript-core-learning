@@ -1,9 +1,7 @@
-
 /***************************************************/
 /************* Primitív adattípusok ****************/
 /***************************************************/
 // angolul primitive types
-
 
 ////////// BOOLEAN TÍPUS ///////////
 
@@ -13,4 +11,3 @@ var isFat = true; // is fat? - yes
 var hasMoney = true; // has money? - yes
 var isHungarian = false; // is hungarian? - no
 var isLoggedIn = false; // is logged in? - no
-
