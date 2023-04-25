@@ -8,6 +8,7 @@
 
 console.log("Excercise #1");
 
+
 function andikaLog() {
   console.log("Szabó Andrea 1995-ben született egy téli napon, Kazincbarcikán. Az egyetemi évei alatt megismerkedett későbbi férjével.");
 }

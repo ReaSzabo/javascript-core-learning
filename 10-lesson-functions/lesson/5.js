@@ -1,4 +1,4 @@
-/////// A függvényeknek adhatunk paramétereket is.
+/////// A függvényeknek adhatunk több paramétert is.
 console.log("Excercise #5");
 
 function osszead(a, b) {

@@ -6,8 +6,8 @@ ELTE feladat
 (A paraméter az "r" sugár.)
 */
 
-function korKerulet(r) {
-  console.log(2 * (r * 3, 14));
+function kor(r) {
+  console.log(2 * r * 3.14)
 }
 
-korKerulet(4);
+kor(2)

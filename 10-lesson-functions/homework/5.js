@@ -5,7 +5,6 @@ ELTE feladat
 Határozd meg számítógéppel a következő kifejezés értékét!
 (Írd ki console.log-gal!)
 
-
   123*7
   -----
   11*13
@@ -13,3 +12,5 @@ Határozd meg számítógéppel a következő kifejezés értékét!
 */
 
 // Nem kell functiont használni.
+
+console.log((123 * 7) / (11 * 13))

@@ -15,4 +15,5 @@ function fogmosas() {
 
 // Írj egy algoritmust egy kávégépen való vásárlásra!
 function kavegep() {
+
 }

@@ -6,3 +6,9 @@ ELTE feladat
 (1 láb = 30,48 cm)
 pl. a függvény paramétere: 2, ezt logolja ki: 60,96
 */
+
+function switchToCm(feet) {
+    console.log(`Cm-ben: ${feet * 30.48}`)
+}
+
+switchToCm(2);

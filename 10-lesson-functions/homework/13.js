@@ -4,3 +4,11 @@ console.log("Exercise 13");
 (0, 1, 2, 3, 4, 5 ...)
 "n" a függvény paramétere legyen.
 */
+
+function natural(number) {
+    for (i = 0; i < number; i++) {
+        console.log(i)
+    }
+}
+
+natural(12)
