@@ -1,9 +1,7 @@
-// Add two numbers and log the result
-console.log("### Add two numbers and log the result");
-
-function addNumbers(number1, number2) {
+var addNumbers = (number1, number2) => {
     console.log(number1 + number2);
 }
+
 
 var myNumber1 = 1;
 var myNumber2 = 2;
