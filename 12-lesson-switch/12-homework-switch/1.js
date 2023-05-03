@@ -16,3 +16,12 @@ if (favoriteDay == "Monday") {
 } else {
     console.log("Their favorite day is on the weekend.");
 }
+
+switch (favoriteDay) {
+    case "Monday": console.log("Their favorite day is Monday."); break;
+    case "Monday": console.log("Their favorite day is Monday."); break;
+    case "Monday": console.log("Their favorite day is Monday."); break;
+    case "Monday": console.log("Their favorite day is Monday."); break;
+    case "Monday": console.log("Their favorite day is Monday."); break;
+    default: console.log("Their favorite day is on the weekend.");
+}

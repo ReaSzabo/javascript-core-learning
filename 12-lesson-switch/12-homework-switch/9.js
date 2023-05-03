@@ -13,3 +13,4 @@ if (word.trim() == sencenceArray[4]) {
 } else {
     console.log("2")
 }
+
