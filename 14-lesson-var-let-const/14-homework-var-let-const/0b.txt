@@ -1,0 +1,4 @@
+Hogy hivatkozunk egy külső CSS stíluslapra (external style sheet)?
+- <style src="mystyle.css">
+- <link ref="stylesheet" type="text/css" href="mystyle.css"
+- <stylesheet>mystyle.css<stylesheet>

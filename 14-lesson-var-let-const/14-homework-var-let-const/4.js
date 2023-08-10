@@ -1,4 +1,4 @@
-// Írj egy programot, ami 1 autó objektumot kap paraméterül és kiírja a consolra,
+// Írj egy programot, ami 1 autó objektumot kap paraméterül és kiírja a console-ra,
 // hogy új-e.
 
 let kocsi1 = {
@@ -14,3 +14,12 @@ let kocsi2 = {
     price: 5400000,
     isNew: true
 }
+
+function isNew(car) {
+    if (car.isNew == true) {
+        return "is new";
+    }
+    return "is used";
+}
+console.log(isNew(kocsi1))
+console.log(isNew(kocsi2))

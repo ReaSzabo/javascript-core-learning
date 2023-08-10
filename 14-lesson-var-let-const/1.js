@@ -1,4 +1,4 @@
-// var 
+// var
 var hello = "hi";
 
 var number = 3;

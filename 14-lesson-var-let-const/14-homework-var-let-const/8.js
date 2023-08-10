@@ -1,3 +1,5 @@
+// Máté
+
 // Write a JavaScript function that takes in a string 
 //  and returns the number of characters in an object.
 
@@ -14,8 +16,15 @@ returns:
 }
 */
 
-
 function getCharacters(string) {
+    let obj = {};
+    for (let i = 0; i < string.length; i++) {
+        obj[string.charAt(i)] = 0;
+    }
+    for (let i = 0; i < string.length; i++) {
+        obj[string.charAt(i)] = obj[string.charAt(i)] + 1;
+    }
+    return obj;
 }
 
 console.log(getCharacters("hello"))
