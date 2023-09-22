@@ -1,0 +1,6 @@
+Milyen típusú property-ei lehetnek egy objektumnak?
+
+- number
+- string
+- object
+- mindegyik

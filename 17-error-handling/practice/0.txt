@@ -1,0 +1,10 @@
+1. Goals
+2. CV
+3. LinkedIn
+4. MyFirstApp greenfox bootcamp
+5. JS ismétlés
+6. Következő alkalommal: JS ismétlés vagy TypeScript
+7. Projekt munka: Angular -> Training
+8. Házi feladat: gondolkodós JS feladat
+9. Felkészülni az interjú kérdésekre
+10. Házi feladat: MyFirstApp során mit tanultál? (angulul és magyarul)

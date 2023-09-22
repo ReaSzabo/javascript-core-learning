@@ -1,0 +1,7 @@
+Hogyan állítunk be távolságot a HTML Element border-e és a tartalma között.
+
+- border-width
+- padding
+- margin
+- border-height
+- block-gap

@@ -1,0 +1,40 @@
+What are the types in Javascript?
+
+Primitive:
+- number
+- string
+- boolean
+- undefined
+- null
+- bigint
+- symbol
+
+Complex:
+- object
+    - built-in: Array, Date
+    - custom: Car, Person, Employee
+
+
+
+
+What is the difference between "==" and "==="?
+
+== -> csak értéket hasonlít
+
+=== -> típust is vizsgál
+
+"2" == 2 
+
+
+
+
+What are the falsy values? 
+
+0
+-0
+0n
+false
+null
+undefined
+NaN
+""
