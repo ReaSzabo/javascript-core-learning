@@ -1,0 +1,5 @@
+- Interjú kérdések: kit kérdezzek
+- Házi feladat: Falsy values
+- Házi feladat: Sorting
+- Ki szeretne dugulásos honlapot csinálni Angularban?
+- JS gyakorlás

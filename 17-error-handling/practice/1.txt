@@ -28,7 +28,7 @@ What is the difference between "==" and "==="?
 
 
 
-What are the falsy values? 
+What are the falsy values in JavaScript? 
 
 0
 -0
