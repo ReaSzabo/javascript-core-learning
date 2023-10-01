@@ -1,15 +1,17 @@
 // Írd át "lefest" metódust arrow function-re.
 
+// akkor nem fog működni a this!!!
+
 var andiCar = {
     marka: "Fiat",
     modell: "500",
     suly: 850,
     szin: "fehér",
     utonVan: false,
-    lefest: function (szin) {
+    lefest: (szin) => {
         this.szin = szin;
     }
 }
 
 andiCar.lefest("kék");
-console.log(andiCar.szin)
+console.log(andiCar.szin);

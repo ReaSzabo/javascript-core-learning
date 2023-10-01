@@ -6,8 +6,8 @@ var andiCar = {
     suly: 850,
     szin: "fehér",
     utonVan: false,
-    lefest: function () {
-
+    lefest: function (color) {
+        this.szin = color;
     }
 }
 

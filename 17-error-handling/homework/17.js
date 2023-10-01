@@ -8,5 +8,13 @@ var andiCar = {
     suly: 850,
     szin: "fehér",
     utonVan: false,
+    kulcsElfordit: function () {
+        this.utonVan = this.utonVan ? false : true;
+        //this.utonVan = !this.utonVan;
+    }
 }
 
+andiCar.kulcsElfordit();
+console.log(andiCar.utonVan);
+andiCar.kulcsElfordit();
+console.log(andiCar.utonVan);

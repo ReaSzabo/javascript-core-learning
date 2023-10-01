@@ -16,4 +16,6 @@ var andiCar = {
 // Próbáld ki!
 andiCar.setSzin("piros");
 // Ellenőrizd az új szin értéket!
-console.log(andiCar.szin)
+console.log(andiCar.szin);
+
+console.log(andiCar.getFogyasztas());

@@ -7,4 +7,9 @@ var szabiCar = {
     suly: 1550,
     szin: "fekete",
     vonohorog: false,
+    getAutoNev: function () {
+        return this.marka + " - " + this.modell;
+    }
 }
+
+console.log(szabiCar.getAutoNev());

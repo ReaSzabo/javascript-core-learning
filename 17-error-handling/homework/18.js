@@ -8,4 +8,9 @@ var szabiCar = {
     suly: 1550,
     szin: "fekete",
     vonohorog: false,
+    logVonohorogStatusz: function () {
+        console.log(this.vonohorog ? "Szabinak van vonóhorga" : "Szabi nem tud elvontatni")
+    }
 }
+
+szabiCar.logVonohorogStatusz();

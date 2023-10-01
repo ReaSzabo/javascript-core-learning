@@ -6,4 +6,10 @@ var andiCar = {
     suly: 850,
     szin: "fehér",
     utonVan: false,
+    addUtanfuto: function () {
+        this.suly += 200;
+    }
 }
+
+andiCar.addUtanfuto();
+console.log(andiCar.suly);
