@@ -5,6 +5,6 @@ class Car {
     }
 }
 
-const myCar1 = new Car("Ford", 2014);
-const myCar2 = new Car("Audi", 2019);
-const myCar3 = new Car("Mustang", 1969);
+let myCar1 = new Car("Ford", 1969);
+var myCar2 = new Car("Audi", 2019);
+const myCar3 = new Car("Suzuki", 2023);

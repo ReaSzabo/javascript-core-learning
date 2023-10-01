@@ -1,6 +1,17 @@
 /*
 Készíts egy Car osztályt!
-Definiálj egy mezőt a sebességnek. A kezdő értéke legyen: 0.
-Készíts egy metódust, ami a kap egy paramétert. 
-Nőveld meg a sebesség property-t
+Definiálj egy mezőt a sebességnek! A kezdő értéke legyen: 0.
+Készíts egy metódust, ami a kap egy paramétert!
+Nőveld meg a sebesség property-t ezzel az értékkel!
 */
+
+class Car {
+    speed = 0;
+    setSpeed = function (number) {
+        this.speed += number;
+    }
+}
+
+var car1 = new Car();
+car1.setSpeed(100);
+console.log(car1.speed);

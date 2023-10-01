@@ -13,7 +13,7 @@ class Food {
     }
 }
 
-const food1 = new Food();
+var food1 = new Food();
 food1.setCalories(1000);
-console.log(food1.calories)
-console.log(food1.getCalories())
+console.log(food1.calories);
+console.log(food1.getCalories());
