@@ -1,15 +1,15 @@
 class Food {
-    isFine = true;
-    calories;
-    color;
-    isHomemade = true;
+    isFine = null;
+    calories = null;
+    color = null;
+    isHomemade = null;
 
     getCalories = function () {
         return this.calories;
     }
 
-    setCalories = function (calories) {
-        this.calories = calories;
+    setCalories = function (number) {
+        this.calories = number;
     }
 }
 

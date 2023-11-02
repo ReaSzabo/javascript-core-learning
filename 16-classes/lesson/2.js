@@ -1,8 +1,8 @@
 class Food {
-    isFine = true;
-    calories;
-    color;
-    isHomemade = true;
+    isFine = null;
+    calories = null;
+    color = null;
+    isHomemade = null;
 }
 
 const food1 = new Food();
