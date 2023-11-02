@@ -1,0 +1,1 @@
+// Write a JavaScript program to check whether three given numbers are increasing in strict or in soft mode.  

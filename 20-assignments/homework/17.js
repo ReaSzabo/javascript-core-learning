@@ -1,0 +1,1 @@
+// Write a JavaScript program to extract the first half of a even string.  
