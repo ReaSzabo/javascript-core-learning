@@ -16,8 +16,8 @@ b = 11
 true
 
 check = (a, b) => {
-    if ((a % 7 == 0 || a % 11 == 0 && b % 7 != 0 && b % 11 != 0) ||
-        (b % 7 == 0 || b % 11 == 0 && a % 7 != 0 && a % 11 != 0)) {
+    if ((a % 7 == 0 && (b % 7 != 0 && b % 11 != 0)) || (a % 11 == 0 && (b % 7 != 0 && b % 11 != 0)) ||
+        (b % 7 == 0 && (a % 7 != 0 && a % 11 != 0)) || (b % 11 == 0 && (a % 7 != 0 && a % 11 != 0))) {
         return true
     } else {
         return false;
@@ -25,4 +25,4 @@ check = (a, b) => {
 }
 
 console.log(check(1, 7));
-console.log(check(7, 7));
+console.log(check(7, 11));
