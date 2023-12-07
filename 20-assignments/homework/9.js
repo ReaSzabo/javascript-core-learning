@@ -26,3 +26,21 @@ check = (a, b) => {
 
 console.log(check(1, 7));
 console.log(check(7, 11));
+console.log(check(7, 7));
+console.log(check(7, 1));
+
+
+function isMultipleOf7Or11(num) {
+    return (num % 7 === 0) || (num % 11 === 0);
+}
+
+function checkMultiples(num1, num2) {
+    const isMultiple1 = isMultipleOf7Or11(num1);
+    const isMultiple2 = isMultipleOf7Or11(num2);
+
+    if ((isMultiple1 || isMultiple2) && !(isMultiple1 && isMultiple2)) {
+        console.log("Exactly one of the numbers is a multiple of 7 or 11.");
+    } else {
+        console.log("Either both numbers are multiples or none is a multiple of 7 or 11.");
+    }
+}

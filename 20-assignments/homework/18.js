@@ -1,15 +1,15 @@
 // Write a JavaScript program to create a new string without the first and last characters of a given string.
 
 
-/*newString = (text) => {
+newString = (text) => {
 
     var newText = text.shift();
 
     newText = text.pop();
 
     return newText;
-}*/
-
+}
+/*
 newString = (text) => {
 
     var newText = "";
@@ -21,7 +21,7 @@ newString = (text) => {
 
     return newText;
 
-}
+}*/
 
 
 console.log(newString("körte"));
