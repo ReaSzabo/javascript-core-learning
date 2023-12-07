@@ -1,4 +1,3 @@
-console.log("Exercise 2");
 // Írj egy függvényt, ami 3 szám paramétert kap és a legnagyobb számmal tér vissza!
 // Teszteld console.log-gal!  
 

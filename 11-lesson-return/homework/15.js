@@ -1,4 +1,3 @@
-console.log("Exercise 11");
 // Írj egy függvényt, ami egy "ehes" nevű booleant kap paraméterként!
 // Ez a Andika éhségét jelzi.
 // A függvény írja ki, hogy "Andika eszik", ha éhes és 

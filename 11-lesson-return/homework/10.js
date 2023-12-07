@@ -1,4 +1,3 @@
-console.log("Exercise 6");
 // Írj egy függvényt, ami egy számot kap paraméterként és kiírja,
 // hogy pozitív szám, negatív szám vagy nulla!
 

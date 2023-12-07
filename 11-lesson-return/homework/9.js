@@ -1,4 +1,3 @@
-console.log("Exercise 5");
 // Írj egy függvényt, ami egy számot kap paraméterként és kiírja,
 // hogy háromjegyű vagy nem!
 

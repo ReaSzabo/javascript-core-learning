@@ -1,4 +1,3 @@
-console.log("Exercise 9");
 // Írj egy függvényt, ami egy számot kap paraméterként!
 // Ez a tanuló jegye.
 // A függvény adja vissza (azaz térjen vissza azzal),
