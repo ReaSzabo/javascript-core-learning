@@ -1,4 +1,3 @@
-console.log("Exercise 10");
 // Írj egy függvényt, ami egy számot kap paraméterként!
 // Ez a hét egy napja.
 // A függvény adja vissza, hogy milyen nap tartozik a számhoz!

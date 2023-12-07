@@ -6,4 +6,4 @@ function last(string) {
   return string.charAt(string.length - 1)
 }
 
-console.log(last("Anyád picsája"))
+console.log(last("My string"))

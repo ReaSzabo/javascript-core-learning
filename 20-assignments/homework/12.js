@@ -1,4 +1,4 @@
-// Write a JavaScript program to convert a given number into hours and minutes.  
+// Write a JavaScript program to convert a given number of minutes into hours and minutes.  
 
 
 convert = (x) => {
@@ -31,5 +31,7 @@ convert = (x) => {
 }
 
 
-console.log(convert(95875));
+console.log(convert(0));
+console.log(convert(80));
+console.log(convert(3601));
 

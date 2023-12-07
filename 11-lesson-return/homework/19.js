@@ -1,5 +1,3 @@
-
-console.log("Exercise 2");
 /* 
   Write a JavaScript function to convert temperatures from Fahrenheit to Celsius. 
   Formula: c/5 = (f-32)/9  
