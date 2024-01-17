@@ -7,4 +7,3 @@ setTimeout(() => {
 }, 5000);
 
 console.log("Hi");
-

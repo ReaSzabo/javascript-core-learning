@@ -1,6 +1,6 @@
-setTimeout(() => {
+setTimeout(function () {
     console.log("Csá");
-}, 1000);
+}, 0);
 
 setTimeout(() => {
     console.log("Szevasz");
