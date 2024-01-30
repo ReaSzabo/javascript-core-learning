@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <style>
+        button {
+            color: white;
+        }
+
+        .gombi {
+            background-color: green;
+            border-radius: 15px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        navigateToOTP = () => {
+            window.location.href = "https://www.otpbank.hu"
+        }
+
+        let counter = 0;
+        setInterval(() => {
+            counter++;
+            if (counter == 5) {
+                window.history.back();
+            }
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <button class="gombi" onclick="navigateToOTP()">Vigyél az OTP-re</button>
+    <a href="https://www.otpbank.hu">A TAG</a>
+</body>
+
+</html>

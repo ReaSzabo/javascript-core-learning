@@ -1,0 +1,10 @@
+Here are some hackerrank examples.
+You do not need to push the code to the repository, use only hackerrank.com.
+
+HACKERRANK:
+
+7. Birthday Cake Candles
+https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true
+
+Extra task:
+Copy the function and create a typescript version of it.
