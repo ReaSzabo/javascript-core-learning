@@ -1,0 +1,7 @@
+Here are some hackerrank examples.
+You do not need to push the code to the repository, use only hackerrank.com.
+
+HACKERRANK:
+
+Mini-Max Sum
+https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true
