@@ -15,7 +15,7 @@ class Kocsika {
 }
 
 // Példányosítunk
-var car1 = new Kocsika(100, "red",);
+var car1 = new Kocsika(100, "red");
 
 // A publikus mezőket tudjuk módosítani.
 car1.color = "brown";

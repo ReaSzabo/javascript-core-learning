@@ -1,0 +1,11 @@
+Here are some hackerrank examples.
+You do not need to push the code to the repository, use only hackerrank.com.
+
+HACKERRANK:
+
+8. Diagonal Difference
+https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true
+
+9. Staircase
+https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
+

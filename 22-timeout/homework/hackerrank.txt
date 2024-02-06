@@ -1,0 +1,23 @@
+Here are some hackerrank examples.
+You do not need to push the code to the repository, use only hackerrank.com.
+
+HACKERRANK:
+
+1. Solve me first:
+https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true
+
+2. Simple array:
+https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true
+
+3. Compare triplets:
+https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true
+
+4. A very big sum:
+https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true
+
+5. Plus minus:
+https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
+
+6. Apple and Orange
+https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true
+

@@ -1,6 +1,10 @@
-// Készíts egy osztályt a való világ valamilyen dolga alapján. 
-// A mezői legyenek ezen dolog tulajdonságai.
-// A metódusai legyenek azok a műveletek, amit a dolog tud végezni vagy rajta el tudnak végezni.
+function faktorialis(number) {
+    if (number == 1) {
+        return 1;
+    } else {
+        return number * faktorialis(number - 1);
+    }
+}
 
 // Ezzel megvalósítod az absztrakciót.
 
