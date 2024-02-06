@@ -11,7 +11,13 @@ class Kocsika {
     }
 
     setSpeed(speed) {
-        this.#speed = speed;
+
+        if (speed < 0) {
+            this.hibaKezeles();
+        } else {
+
+            this.#speed = speed;
+        }
     }
 
     getSpeed() {
@@ -19,7 +25,7 @@ class Kocsika {
     }
 
     hibaKezeles() {
-        throw new Error("Nem megfelelő sebesség")
+        throw new Error("Nem megfelelő sebesség");
     }
 }
 
