@@ -1,7 +1,24 @@
 // Write a JavaScript function to find the largest of three given integer parameters.
 
-let arr = [4, 1, 2, 3];
+function largestNumber(x, y, z) {
 
-arr.sort();
+    let max = 0;
 
-console.log(arr)
+    if (x > max) {
+        max = x;
+
+        if (y > max) {
+            max = y;
+        }
+
+        if (z > max) {
+            max = z;
+        }
+    }
+
+
+    return max;
+
+}
+
+console.log(largestNumber(2, 3, 1));

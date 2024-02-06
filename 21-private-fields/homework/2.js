@@ -6,13 +6,35 @@ function faktorialis(number) {
     }
 }
 
-console.log(faktorialis(4));
-console.log(faktorialis(3)); // 6
-console.log(faktorialis(2)); // 2
-console.log(faktorialis(1)); // 1
+// Ezzel megvalósítod az absztrakciót.
 
-for (i = 0; i < 10; i++) {
-    console.log(faktorialis(i));
+
+class Sofa {
+
+    static logHello() {
+        console.log("Hello");
+    }
+
+    size = null;
+    color = null;
+    material = null;
+
+    getColor() {
+        return this.color;
+    }
+
+    setMaterial(material) {
+        this.material = material;
+    }
+
+    logSize() {
+        console.log(this.size);
+    }
 }
 
-// 4 * 3 * 2 * 1
+
+let peldany = new Sofa();
+
+peldany.logSize();
+
+Sofa.logHello()

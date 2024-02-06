@@ -3,3 +3,17 @@
 // Illetve biztosítsd, hogy csak egy metódus segítségével lehessen felülírni.
 
 // Ezzel megvalósítod az "Egységbe zárást".
+
+
+class Plants {
+
+    #isGreen = null;
+
+    getIsGreen() {
+        return this.setIsGreen;
+    }
+
+    setIsGreen(isGreen) {
+        this.isGreen = isGreen;
+    }
+}
