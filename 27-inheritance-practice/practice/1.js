@@ -7,8 +7,8 @@ Készítsünk egy háttértároló osztályt, amely fájlok listáját kezeli az
 - Van egy FoglaltKapacitás tulajdonsága, amellyel le lehet kérdezni a tárolt fájlok összméretét
 - Van egy Hozzáad() metódusa, amellyel új fájlt lehet hozzáadni, ha ugyanilyen nevű fájl nincs még a
 háttértárolón, illetve az új fájl elfér a háttértárolón
-- Van egy Keres() metódusa, amely egy megadott fájlnév alapján megkeresi és visszaadja a fájlt - Van egy
-Töröl() metódusa, amely letörli a megadott fájlt, amennyiben létezik 
+- Van egy Keres() metódusa, amely egy megadott fájlnév alapján megkeresi és visszaadja a fájlt 
+- Van egy Töröl() metódusa, amely letörli a megadott fájlt, amennyiben létezik 
 
 A fájlok jellemzői a következők:
 - Van nevük és méretük
@@ -31,7 +31,7 @@ class Storage {
 
     constructor(maxCapacity) {
         this.maxCapacity = maxCapacity;
-     };
+    };
 
     Format() {
         this.fileArray = [];
@@ -42,71 +42,54 @@ class Storage {
     };
 
     getFreeCapacity() {
-        return this.freeCapacity = this.maxCapacity - this.reservedCapacity;
+        return this.freeCapacity;
     }
 
     getReservedCapacity() {
-        return this.reservedCapacity = this.maxCapacity - this.freeCapacity;
+        return this.reservedCapacity;
     };
 
     Plus(x) {
-
         let controller = true;
 
-        for(let i = 0; i < this.fileArray.length; i++) {
-
-            if(this.fileArray[i].name == x.name) {
-
+        for (let i = 0; i < this.fileArray.length; i++) {
+            if (this.fileArray[i].name == x.name) {
                 controller = false;
-
-            } else if(this.fileArray[i].size + this.reservedCapacity <= this.maxCapacity) {
-
-                controller = true;
             }
-
         }
-        
-        if(controller == true) {
 
+        if (controller == true && x.size + this.reservedCapacity <= this.maxCapacity) {
             this.fileArray.push(x)
-
-            this.reservedCapcity = 0;
-
-            for(let i = 0; i < this.fileArray.length; i++) {
-    
+            this.reservedCapacity = 0;
+            for (let i = 0; i < this.fileArray.length; i++) {
                 this.reservedCapacity = this.reservedCapacity + this.fileArray[i].size;
-    
             }
-
             this.freeCapacity = this.maxCapacity - this.reservedCapacity;
         }
-
-      
-
     }
 
     Search(y) {
-
-        for(let i = 0; i < this.fileArray.length; i++) {
-
-            if(this.fileArray[i].name == y) {
-
+        for (let i = 0; i < this.fileArray.length; i++) {
+            if (this.fileArray[i].name == y) {
                 return this.fileArray[i];
             }
         }
     }
 
     Delete(z) {
-
-        for(let i = 0; i < this.fileArray.length; i++) {
-
-            if(this.fileArray[i].name == z) {
-
+        for (let i = 0; i < this.fileArray.length; i++) {
+            if (this.fileArray[i].name == z) {
                 delete this.fileArray[i];
             }
         }
-
     }
 
-    
 }
+
+
+var storage = new Storage(100000);
+
+storage.fileArray = [{ name: "Bence.txt", size: 100 }];
+
+storage.Delete("Bence.txt");
+console.log(storage.fileArray);
