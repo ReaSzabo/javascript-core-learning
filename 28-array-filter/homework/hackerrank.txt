@@ -1,0 +1,10 @@
+Here are some hackerrank examples.
+You do not need to push the code to the repository, use only hackerrank.com.
+
+HACKERRANK:
+
+Time Conversion
+https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true
+
+Grading Students
+https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true
