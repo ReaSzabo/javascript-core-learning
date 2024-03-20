@@ -4,5 +4,9 @@ var parosSzamok = [];
 
 // írjuk meg, az if statementet, úgy hogy a parosSzamok tömbbe kerüljenek be a páros számok.
 for (let i = 0; i < szamok.length; i++) {
-
+    if (szamok[i] % 2 == 0) {
+        parosSzamok.push(szamok[i]);
+    }
 }
+
+console.log(parosSzamok);
