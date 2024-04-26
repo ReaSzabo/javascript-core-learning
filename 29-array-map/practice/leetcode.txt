@@ -1,0 +1,5 @@
+Here are some leetcode examples.
+You do not need to push the code to the repository, use only leetcode.com.
+
+
+https://leetcode.com/problems/convert-the-temperature/description/
