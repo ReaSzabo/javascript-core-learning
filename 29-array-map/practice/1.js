@@ -2,6 +2,6 @@
 
 const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
 
-var filteredWords =
+var filteredWords = words.filter(word => word.length > 6);
 
-    console.log(filteredWords);
+console.log(filteredWords);

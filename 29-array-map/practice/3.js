@@ -6,3 +6,11 @@
 // amik tartalmazzák a "keresési kifejezést", 
 // azaz a második paramétert.
 
+const param1 = ["dagi", "kövér", "csúnya", "bárgyú"];
+const param2 = "árgyú";
+
+function doubleParams(tombi, s) {
+    return tombi.filter(part => part.includes(s));
+}
+
+console.log(doubleParams(param1, param2));

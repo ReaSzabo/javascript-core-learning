@@ -15,6 +15,6 @@ const people = [
     }
 ];
 
-const names = people.map((person) => person.name);
+const names = people.map(person => person.name);
 
 console.log(names);

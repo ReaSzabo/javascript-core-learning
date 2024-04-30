@@ -2,6 +2,6 @@
 
 const names = ["Andi", "Kóku", "Bence", "Csomag"];
 
-const letters = names.map((name) => name.charAt(0));
+const letters = names.map((name) => name[0]);
 
 console.log(letters);
