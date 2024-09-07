@@ -1,6 +1,7 @@
 // 1. feladat
 // "vagy" használata - ||
-// Ha a magyarJegy vagy nyelvtanJegy vagy a matekJegy 5-ös, írd ki "Legalább egy jegy ötös", egyébként "Egyik sem 5-ös" !
+// Ha a magyarJegy vagy nyelvtanJegy vagy a matekJegy 5-ös, írd ki "Legalább egy jegy ötös", 
+//egyébként "Egyik sem 5-ös" !
 
 var magyarJegy = 1;
 var nyelvtanJegy = 4;
@@ -14,6 +15,14 @@ var matekJegy = 2;
 
 var andiEhes = true;
 var mateEhes = true;
+
+if (andiEhes && mateEhes) {
+    console.log("Elmegyünk enni.");
+} else {
+    console.log("Még nem eszünk.");
+}
+
+console.log(andiEhes && mateEhes ? "Elmegyünk enni." : "Még nem.");
 
 
 
@@ -49,7 +58,8 @@ var szamlalo = 10;
 // Ha a kutya éhes, ad neki 200g húst a konzervből. (Így a konzerv súlya 300g lesz.)
 // Ha a macska éhes, ad neki 100g húst a konzervből. (Így a konzerv súlya 400g lesz.)
 // Ha mind a két állat éhes, mindkettőt megeteti 300g-mal. (Így a konzerv súlya 200g lesz.)
-// A feladatod az, hogy a "konzervSuly" változónak új értéket adj, ami a konzerv etetés utáni súlyát jelöli. (pl. konzerSuly = 300;)
+// A feladatod az, hogy a "konzervSuly" változónak új értéket adj, ami a konzerv etetés utáni súlyát jelöli. 
+//(pl. konzerSuly = 300;)
 // Használd szabadon az if, else if, else feltételes utasításokat.
 
 var konzervSuly = 500;
@@ -64,15 +74,18 @@ var cicaEhes = true;
 // Adott egy uzenet nevű string változó.
 // Írd ki a konzolra a hosszát.
 
-var uzenet = "Szia Andika, ügyesen oldd meg a feladatokat."
+var uzenet = "Szia Andika, ügyesen oldd meg a feladatokat.";
+
+console.log(uzenet.length);
 
 
 
 // 7. feladat (nem kódolós)
 // Mi az alábbi üres string hossza?
-// var uresString = "";
+var uresString = "";
 // Szerintem a hossza ennyi: 
 
+console.log(uresString.length);
 
 
 
@@ -104,6 +117,10 @@ var matekJegyek = [1, 3, 4, 2, 5, 3, 1, 5];
 
 var rajzJegyek = [5, 3];
 
+if (rajzJegyek[0] == 5) {
+    console.log("Jó");
+}
+
 
 
 
@@ -112,7 +129,8 @@ var rajzJegyek = [5, 3];
 // A feladatsorban 3 kérdés volt, erre 3 igaz/hamis választ adott.
 // A válaszokat tömbben tároltuk el.
 // A helyes megoldások: 1. true, 2. false, 3. true.
-// Vizsgáld meg egy programmal, hogy a hallgató által megadott válaszok helyes-e, ha mind helyes, akkor írd ki: "Ügyes", egyébként írd ki: "Süsü" !
+// Vizsgáld meg egy programmal, hogy a hallgató által megadott válaszok helyes-e, 
+//ha mind helyes, akkor írd ki: "Ügyes", egyébként írd ki: "Süsü" !
 
 var hallgatoValaszai = [true, true, true];
 

@@ -73,6 +73,11 @@ var szamok = [1, 2, 3, 4, 5, 6, 8];
 var osszeg = 0;
 var szamok2 = [1, 5, 6, 8];
 
+for (let i = 0; i < szamok2.length; i++) {
+    osszeg = osszeg + szamok2[i];
+}
+
+console.log(osszeg);
 
 
 // 11. feladat
@@ -104,6 +109,10 @@ var szamok6 = [-3, -2, -1, 0, 1, 2, 3, 4];
 // 15. feladat
 // Írd ki az "limit" változó értéke alatti pozitív egész számokat! (egyesével)
 var limit = 10; // 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+for (let i = limit; i >= 1; i--) {
+    console.log(i);
+}
 
 
 

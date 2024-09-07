@@ -17,6 +17,8 @@
     var tomb1 = [1, 3, 4, 5, 6, 7, 8, 3, 0, 42, 65];
     var tomb2 = [5000, 4000, 3000, 2000, 100000, 999999];
 
+    console.log(tomb1.length>tomb2.length ? tomb1.length : tomb2.length);
+
   
     
 
@@ -26,6 +28,8 @@
     // Tipp: két sort kell írnod, az elsőben megnöveled a változó értékét, a másodikban pedig kiírod a változót.
     var numero = 1;
 
+    numero++;
+
 
 
     // 5. feladat
@@ -33,11 +37,17 @@
     // Használd a rövidített verziót!
     var szam = 10;
 
+    szam--;
+
 
 
     // 6. feladat
     // For ciklus
     // Írd ki az egész számokat 0-tól 4-ig!
+
+    for(let i = 0; i < 5; i++) {
+        console.log(i);
+    }
 
  
 
@@ -46,69 +56,8 @@
     // 7. feladat
     // Írd ki az egész számokat 1-től 5-ig!
 
-
-
-
-
-    // 8. feladat
-    // Írd ki az egész számokat -1-től 5-ig! (minusz egytől ötig)
-
-
-
-
-    // 9. feladat
-    // Írj ki minden második számot 0-tól 12-ig!
-
-
-
-
-    // 10. feladat
-    // Írj ki minden 10 alatti természetes szám köbét!
-    // Egy szám köbét megkapod, ha önmagával szorzod meg 2-szer: szám * szám * szám
-
- 
-
-
-
-    // 11. feladat
-    // Írd ki tömb elemeit egyszerre!
-    var szamok = [12, 4, 6, 4, 2, 5, 7, 8];
-
-
-
-  
-
-    // 12. feladat
-    // Írd ki a tömb elemeit egyesével for ciklussal!
-    var szavak = ["Szevasz", "Szivasz", "Csá", "Cső", "Helló"];
-
-
-
-
-    // 13. feladat
-    // Írd ki a tömb elemeit for ciklussal!
-    var dontesek = [true, false, true, false, false, true];
-
-
-
-    
-    
-
-    // 14. feladat
-    // Írd ki a tömb azon elemeit, amelyek nagyobbak, mint 50!
-
-    var nagySzamok = [100, 49, 10, 55, 200];
-
-
-
-
-
-
-    // 15. feladat 
-    // Írj valamit egy többsoros kommentbe!
-
-
-
+    /* 
+    */
 
     
     // 16. feladat (nem kódolós)

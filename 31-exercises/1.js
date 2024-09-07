@@ -3,7 +3,7 @@
 // Írd ki a konzolra az 5 és a 3 összegét:
 console.log("1. FELADAT");
 
-console.log("3 és 5 összeadva:");
+console.log("3 és 5 összeadva:", 5 + 3);
 
 
 
@@ -11,7 +11,7 @@ console.log("3 és 5 összeadva:");
 // Írd ki a konzolra az 5 és a 13 szorzatát:
 console.log("2. FELADAT");
 
-console.log("5 és 13 összeszorozva:");
+console.log("5 és 13 összeszorozva:", 5 * 13);
 
 
 // 3. feladat: 
@@ -23,6 +23,8 @@ console.log("3. FELADAT");
 var number;
 number = 10;
 
+console.log(number);
+
 
 // 4. feladat: 
 // Hozz létre (deklarálj) egy "szin" nevű változót!
@@ -30,6 +32,10 @@ number = 10;
 // Írd ki a konzolra a "szin" változó értékét!
 console.log("4. FELADAT");
 
+var szin;
+szin = "piros";
+
+console.log(szin);
 
 
 
@@ -38,6 +44,12 @@ console.log("4. FELADAT");
 // Az értékük legyen két általad választott szín, szöveges karakterláncként, azaz string-ként.
 // Írd ki a konzolra a "szin1" és a "szín2" változót vesszővel elválasztva!
 console.log("5. FELADAT");
+
+var szin1, szin2;
+szin1 = "barna";
+szin2 = "fekete";
+
+console.log(szin1 + ", " + szin2);
 
 
 
@@ -48,8 +60,11 @@ console.log("5. FELADAT");
 // Írd ki a konzolra a 3. változó értékét!
 console.log("6. FELADAT");
 
+var a = 5;
+var b = 4;
+var c = a + b;
 
-
+console.log(c);
 
 
 // 7. feladat:

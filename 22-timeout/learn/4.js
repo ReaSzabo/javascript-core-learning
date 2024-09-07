@@ -15,7 +15,7 @@ setTimeout(() => {
 }, 1);
 
 setTimeout(() => {
-    console.log("Szerbusz");
+    console.log("Szervusz");
 }, 0);
 
 console.log("Hi");

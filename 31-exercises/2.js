@@ -5,7 +5,11 @@
 // Deklarálj egy változót "szin1" néven.
 // Add neki az alábbi értéket: "barna"
 // Egy if feltételes utasításban írd ki, hogy "kaka színe", ha a szin1 változó értéke barna.
-var szin1 = "barna"
+var szin1 = "barna";
+
+if (szin1 == "barna") {
+    console.log("kaka színe " + szin1);
+};
 
 
 
@@ -15,6 +19,12 @@ var szin1 = "barna"
 
 var nyelvtanJegy = 4;
 var matekJegy = 2;
+
+if (nyelvtanJegy < matekJegy) {
+    console.log("Reálos vagyok");
+} else {
+    console.log("A humán tárgyak érdekelnek");
+};
 
 
 
@@ -32,9 +42,7 @@ var tesiJegy = 5;
 // vagy: || (alt+W)
 var irodalomJegy = 4;
 
-if (irodalomJegy == 3 || irodalomJegy == 4) {
-    console.log("Közepes vagyok")
-};
+
 
 
 // 5. feladat 
@@ -52,21 +60,12 @@ var hossz = 11;
 
 
 
-// ÚJ INFÓ: az if-eket halmozni is lehet, ilyenkor az else után írunk még egy if-et és egy feltételt: ... else if (feltétel) { ....
+// ÚJ INFÓ: az if-eket halmozni is lehet, ilyenkor az else után írunk még egy if-et és egy feltételt: 
+//... else if (feltétel) { ....
 // lásd:
 
 var franciaJegy = 1;
-if (franciaJegy == 5) {
-    console.log("Jeles");
-} else if (franciaJegy == 4) {
-    console.log("Jó");
-} else if (franciaJegy == 3) {
-    console.log("Közepes");
-} else if (franciaJegy == 2) {
-    console.log("Elégséges");
-} else if (franciaJegy == 1) {
-    console.log("Elégtelen");
-}
+
 
 // esetünkben szerepel 
 // - 1db sima IF
@@ -86,6 +85,8 @@ if (olaszJegy == 5) {
     console.log("Közepes");
 } else if (olaszJegy == 2) {
     console.log("Elégséges");
+} else {
+    console.log("Elégtelen");
 }
 // Ide írd a kódrészletet.
 
