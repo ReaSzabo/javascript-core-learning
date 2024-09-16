@@ -3,7 +3,13 @@
 // Tipp: használd a replaceAll metódust. Pl. string.replaceAll("régi", "új")
 
 
+removeVowels = (string) => {
+
+    let newString = string.replaceAll("a", "").replaceAll("A", "").replaceAll("e", "").replaceAll("E", "").replaceAll("i", "").replaceAll("I", "").replaceAll("o", "").replaceAll("O", "").replaceAll("u", "").replaceAll("U", "");
+
+    return newString;
+}
 
 
-console.log(vowels("Andika"));
-console.log(vowels("olajmezo"));
+console.log(removeVowels("Andika"));
+console.log(removeVowels("olajmezo"));

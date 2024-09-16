@@ -2,10 +2,10 @@ var szam = 2;
 console.log(szam);
 
 // logolj ki egy number literált
-console.log();
+console.log(6);
 
 // logolj ki egy boolean literált
-console.log();
+console.log(true);
 
 // logolj ki egy object literált
-console.log();
+console.log({ name: "Karcsika" });

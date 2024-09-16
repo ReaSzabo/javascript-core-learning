@@ -3,6 +3,18 @@
 // Teszteld console.log-gal!  
 
 
+maxNumber = (numberArr) => {
+
+    var max = -999999999999999;
+
+    for (let i = 0; i < numberArr.length; i++) {
+        if (numberArr[i] > max) {
+            max = numberArr[i];
+        }
+    }
+
+    return max;
+}
 
 
-console.log(largestNumber(tombi));
+console.log(maxNumber(tombi));

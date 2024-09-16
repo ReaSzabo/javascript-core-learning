@@ -8,3 +8,5 @@ var topanka = {
 }
 
 // logold ki az objektumot
+
+console.log(topanka);

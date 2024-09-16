@@ -4,9 +4,21 @@
 
 
 
+minNumber = (numberArr) => {
+    var min = 999999999999999999;
+
+    for (let i = 0; i < numberArr.length; i++) {
+        if (numberArr[i] < min) {
+            min = numberArr[i];
+        }
+    }
+
+    return min;
+}
+
 
 
 let tombi = [4, -3, 255, 9, 0, -8, 1];
 
 
-console.log(smallestNumber(tombi));
+console.log(minNumber(tombi));

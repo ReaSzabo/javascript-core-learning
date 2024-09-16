@@ -6,6 +6,9 @@ var valami;
 var mate = { kor: 29 };
 var tomb = [1, 2, 3];
 
-var ertekek = [2, "szasz", 4.3, `szivasz`, 0, mate, NaN, tomb, Infinity, 'szevasz', true, valami, false];
+var ertekek = [2, "szasz", 4.3, `szivasz`, 0, mate, NaN, tomb, Infinity, 'szevasz', true, valami, false, undefined, null];
 
-console.log(typeof 44)
+for (let i = 0; i < ertekek.length; i++) {
+
+    console.log(typeof ertekek[i]);
+}

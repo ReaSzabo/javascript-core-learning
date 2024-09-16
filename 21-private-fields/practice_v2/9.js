@@ -4,12 +4,18 @@
 
 function three(n) {
 
+    if (n.length == 2 && n[0] != "-") {
+        console.log("A szám háromjegyű.");
+    } else {
+        console.log("A szám nem háromjegyű.");
+    }
+
 }
 
 
-console.log(three(12));
-console.log(three(-44));
-console.log(three(342));
-console.log(three(2.5));
+three(12);
+three(-44);
+three(342);
+three(2.5);
 
 

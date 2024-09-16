@@ -16,7 +16,11 @@ var szavak = ["Kerek", "erdő", "közepén"];
 
 var mondat = ""
 
+for (let i = 0; i < szavak.length; i++) {
+    mondat = mondat + szavak[i] + " ";
+}
 
+console.log(mondat);
 
 
 
@@ -24,13 +28,18 @@ console.log("Exercise #3");
 // Írd ki a mondat első betűjét! (egy string metódus segítségével)
 var mondat = "Helló belló";
 
+console.log(mondat.charAt(0));
+
 // Csináld meg ugyanezt a string tömbként való kezelésével (index)
 
-
+console.log(mondat[0]);
 
 console.log("Exercise #4");
 // Írd ki a mondat utolsó betűjét!
 var mondat2 = "Zöldöklű öldöklő";
+
+console.log(mondat.charAt(mondat.length - 1));
+
 
 
 
@@ -40,7 +49,7 @@ console.log("Exercise #5");
 // Írd ki a mondat negyedik betűjét!
 var mondat3 = "Kóborló";
 
-
+console.log(mondat.charAt(3));
 
 
 
@@ -50,7 +59,7 @@ console.log("Exercise #6");
 var mondat4 = "tej kenyér herzszalámi";
 
 
-
+mondat4.startsWith("t");
 
 
 
@@ -69,6 +78,8 @@ console.log("Exercise #8");
 var mondat5 = "kiskutya füle";
 
 
+console.log(mondat5.substring(0, 3));
+
 
 
 
@@ -79,7 +90,7 @@ var mondat6 = "kelemen kabátban";
 
 
 
-
+console.log(mondat6.substring(0, 8));
 
 
 

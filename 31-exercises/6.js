@@ -3,9 +3,15 @@
 console.log("Exercise #4");
 // Write a program to log all even numbers between 0 to 11. (even = páros)
 
+for (let i = 0; i < 11; i = i + 2) {
+    console.log(i);
+}
+
 
 console.log("Exercise #5");
 // Write a program to log all odd numbers between 0 to 7. (odd = páratlan)
+
+
 
 
 // Új típusú feladat
@@ -61,7 +67,15 @@ console.log("Exercise #10");
 console.log("Exercise #11");
 // Írd ki a tömb azon elemeit, amelyek páratlanok!
 var tombocske1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 200];
+var tombocske2 = [];
 
+for (let i = 0; i < tombocske1.length; i++) {
+    if (tombocske1[i] % 2 == 1) {
+        console.log(tombocske1[i]);
+    }
+};
+
+console.log(tombocske2);
 
 
 
