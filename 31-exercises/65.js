@@ -2,13 +2,13 @@
 
 var sentenceString = "this is a nice day";
 
-var sencenceArray = sentenceString.split(" ");
+var sentenceArray = sentenceString.split(" ");
 
-sencenceArray[4] = sencenceArray[4].replaceAll("y", "te");
+sentenceArray[4] = sentenceArray[4].replaceAll("y", "te");
 
 var word = "   date    ";
 
-if (word.trim() == sencenceArray[4]) {
+if (word.trim() == sentenceArray[4]) {
     console.log("1")
 } else {
     console.log("2")

@@ -24,3 +24,10 @@ var csajok = [
     single: true
   }
 ];
+
+
+for (let i = 0; i < csajok.length; i++) {
+  csajok[i].single = false;
+}
+
+console.log(csajok);
