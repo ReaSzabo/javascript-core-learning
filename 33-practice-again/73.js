@@ -1,4 +1,4 @@
-// Írj egy függvényt, ami 2 autó objektumot kap paraméterül és az olcsóbbat adja vissza.
+// Írj egy függvényt, ami 2 autó objektumot kap paraméterül és az olcsóbbal tér vissza.
 let kocsi1 = {
     brand: "Ford",
     type: "Fiesta",

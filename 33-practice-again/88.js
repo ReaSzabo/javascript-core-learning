@@ -5,13 +5,3 @@ Készíts egy metódust, ami a kap egy paramétert!
 Nőveld meg a sebesség property-t ezzel az értékkel!
 */
 
-class Car {
-    speed = 0;
-    setSpeed = function (number) {
-        this.speed += number;
-    }
-}
-
-var car1 = new Car();
-car1.setSpeed(100);
-console.log(car1.speed);

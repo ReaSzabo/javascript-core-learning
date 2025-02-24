@@ -1,4 +1,4 @@
-// getCalories, setCalories
+// create getCalories, setCalories methods for the class
 
 class Food {
     isFine = null;
