@@ -11,4 +11,10 @@ var tombocske = [
 ]
 var szamlalo = 0;
 
+for (let i = 0; i < tombocske.length; i++) {
+  if (tombocske[i].includes(0)) {
+    szamlalo++;
+  }
+}
+
 console.log(szamlalo);

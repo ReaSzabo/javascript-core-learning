@@ -1,5 +1,5 @@
 // #6
-// What would we see on the console?
+// What would we see on the console? Disco, Party, Disco, Party Disco
 
 var codes = ["D", "P", "D", "P", "D", "Party"];
 

@@ -1,3 +1,3 @@
 var koku;
-// mit ír ki?
+// mit ír ki? - undefined
 console.log(koku);

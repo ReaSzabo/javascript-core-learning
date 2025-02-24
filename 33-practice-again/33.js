@@ -6,3 +6,7 @@ var circle = {
   r: 12
 }
 
+circle.circumference = 2 * circle.r * 3.14;
+
+console.log(circle);
+

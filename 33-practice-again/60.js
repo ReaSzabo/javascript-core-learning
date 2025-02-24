@@ -1,6 +1,6 @@
 // #4
 // What would we see on the console?
-// Answer:
+// Answer: 3
 
 var personWeight = 85;
 

@@ -1,5 +1,5 @@
 // #5
-// What would we see on the console?
+// What would we see on the console? 100, 200, 300, 400, 500
 
 var numbers = [10, 20, 30, 40, 50];
 

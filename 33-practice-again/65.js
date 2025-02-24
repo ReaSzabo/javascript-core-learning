@@ -1,4 +1,4 @@
-// What would we see on the console?
+// What would we see on the console? 1
 
 var sentenceString = "this is a nice day";
 

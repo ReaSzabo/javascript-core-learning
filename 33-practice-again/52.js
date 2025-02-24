@@ -6,3 +6,27 @@
 // A függvény egyesével logolja ki az első "n" fibonacci számot!
 
 
+function getNthFibonacci(n) {
+
+    if (n == 1) {
+
+        return 0;
+    } else if (n == 2) {
+
+        return 1;
+    } else {
+
+        return getNthFibonacci(n - 1) + getNthFibonacci(n - 2);
+    }
+}
+
+function logFirstNFibonacci(m) {
+
+    for (let i = 1; i <= m; i++) {
+
+        console.log(getNthFibonacci(i));
+    }
+}
+
+logFirstNFibonacci(10);
+

@@ -101,7 +101,11 @@ var szamok6 = [-3, -2, -1, 0, 1, 2, 3, 4];
 // Írd ki az "limit" változó értéke alatti pozitív egész számokat! (egyesével)
 var limit = 10; // 1, 2, 3, 4, 5, 6, 7, 8, 9
 
-
+for (let i = 1; i < limit; i++) {
+    if (i % 2 == 0) {
+        console.log(i);
+    }
+}
 
 
 
@@ -111,6 +115,14 @@ var limit = 10; // 1, 2, 3, 4, 5, 6, 7, 8, 9
 // - ha negatív: "N"
 // - ha 0, akkor "0"
 var szam = 11;
+
+if (szam == 0) {
+    console.log("0");
+} else if (szam < 0) {
+    console.log("N");
+} else {
+    console.log("P");
+}
 
 
 
@@ -124,3 +136,12 @@ var szam = 11;
 // - ha 0, akkor "0"
 var szamok7 = [11, 0, -1, 2, 1234, -3, 4, 44, 0];
 
+for (let i = 0; i < szamok7.length; i++) {
+    if (szamok7[i] == 0) {
+        console.log("0");
+    } else if (szamok7[i] < 0) {
+        console.log("N");
+    } else {
+        console.log("P");
+    }
+}

@@ -25,6 +25,10 @@ var csajok = [
   }
 ];
 
+for (let i = 0; i < csajok.length; i++) {
+  csajok[i].single = false;
+}
+
 
 
 console.log(csajok);

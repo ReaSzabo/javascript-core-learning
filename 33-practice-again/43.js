@@ -5,3 +5,7 @@ ELTE feladat
 (A paraméter az "r" sugár.)
 */
 
+circumference = (r) => {
+    return 2 * r * 3.14;
+}
+

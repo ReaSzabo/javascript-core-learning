@@ -11,3 +11,5 @@ console.log(mondat);
 // A végén maradt egy space.
 // Írd ki a programot felesleges mondatvégi space nélkül! 
 // Van rá egy string metódus. (körbenyírás angolul)
+
+console.log(mondat.trim());

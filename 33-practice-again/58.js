@@ -7,3 +7,10 @@ if (isRaining == true) {
 } else if (isRaining == false) {
     console.log("It is not raining.");
 }
+
+switch (isRaining) {
+    case true: console.log("It is raining.");
+        break;
+    case false: console.log("It is raining.");
+        break;
+}
