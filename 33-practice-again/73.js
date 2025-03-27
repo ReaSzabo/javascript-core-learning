@@ -12,3 +12,15 @@ let kocsi2 = {
     price: 1400000,
     isNew: false
 }
+
+cheaperCar = (obj1, obj2) => {
+    if (obj1.price == obj2.price) {
+        return "They have the same price, which is: " + obj1.price
+    } else if (obj1.price < obj2.price) {
+        return obj1;
+    }
+    return obj2;
+}
+
+console.log(cheaperCar(kocsi1, kocsi2));
+

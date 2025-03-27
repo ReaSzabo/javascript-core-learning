@@ -1,4 +1,4 @@
-var nev = "Koku";
+let nev = "Koku";
 console.log(nev);
 
 // milyen nyelvi elem a "nev"? - változó
@@ -10,4 +10,5 @@ console.log(medve);
 
 
 console.log("kenyér");
-// hogy nevezzük, amit a log kiír itt? - string
+// hogy nevezzük, amit a log kiír itt? - literál
+

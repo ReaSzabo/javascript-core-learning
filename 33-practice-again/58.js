@@ -1,6 +1,5 @@
-// #2
 // Create a switch statement from the following if statement
-var isRaining = true;
+let isRaining = true;
 
 if (isRaining == true) {
     console.log("It is raining.");

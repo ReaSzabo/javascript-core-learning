@@ -11,3 +11,7 @@ class Car {
         this.color = color;
     }
 }
+
+let firstCar = new Car("Honda Civic", 2003, "fekete");
+let secondCar = new Car("Hyundai i20", 2017, "barna");
+let thirdar = new Car("Mini Countryman", 2022, "zsálya zöld");

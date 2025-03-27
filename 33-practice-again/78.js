@@ -15,3 +15,21 @@ returns:
  o: 1
 }
 */
+
+stringToObj = (s) => {
+
+    let theObj = {};
+
+    for (let i = 0; i < s.length; i++) {
+        if (theObj[s[i]] === undefined) {
+            theObj[s[i]] = 1;
+        } else {
+            theObj[s[i]]++;
+        }
+    }
+
+    return theObj;
+}
+
+console.log(stringToObj("hello"));
+

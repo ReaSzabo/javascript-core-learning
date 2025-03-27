@@ -5,3 +5,16 @@ Készíts egy metódust, ami a kap egy paramétert!
 Nőveld meg a sebesség property-t ezzel az értékkel!
 */
 
+class Car {
+    speed = null;
+    increaseSpeed(x) {
+        this.speed = this.speed + x;
+    }
+}
+
+const redCar = new Car();
+redCar.increaseSpeed(15);
+console.log(redCar.speed);
+
+
+

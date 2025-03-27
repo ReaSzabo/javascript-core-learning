@@ -1,7 +1,6 @@
-console.log("Exercise 7");
 // Használd a replaceAll metódust, hogy a "film" változó értéke "TeneT" legyen!
-var film = "tenet";
+let film = "tenet";
 
-film = film.replaceAll("tenet", "TeneT");
+film = film.replaceAll("t", "T");
 
 console.log(film);

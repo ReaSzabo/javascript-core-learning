@@ -1,5 +1,5 @@
 // Használd a replaceAll metódust, hogy a "stringecske" változóben minden állat "cat" legyen!
-var stringecske = "The quick brown fox jumps over the lazy dog.";
+let stringecske = "The quick brown fox jumps over the lazy dog.";
 
 stringecske = stringecske.replaceAll("fox", "cat").replaceAll("dog", "cat");
 

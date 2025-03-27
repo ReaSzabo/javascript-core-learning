@@ -1,7 +1,7 @@
 // Adott egy mondat, amit egy tömb szavaiból állított össze valaki.
-var szavak = ["Ez", "egy", "fa"];
-var mondat = "";
-for (var i = 0; i < szavak.length; i++) {
+const szavak = ["Ez", "egy", "fa"];
+let mondat = "";
+for (let i = 0; i < szavak.length; i++) {
     mondat = mondat + szavak[i] + " ";
 }
 

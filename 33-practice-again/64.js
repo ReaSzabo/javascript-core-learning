@@ -1,14 +1,14 @@
-// What would we see on the console?
+// What would we see on the console? - 3
 
-var favoriteFoods = ["cheeseburger", "chilaquiles", "pasta"];
+let favoriteFoods = ["cheeseburger", "chilaquiles", "pasta"];
 if (favoriteFoods.length == 3) {
     favoriteFoods.push("fish");
 }
 if (favoriteFoods.includes("fish")) {
     favoriteFoods.push("chips");
 }
-var counter = 0;
-for (var i = 0; i < favoriteFoods.length; i += 1) {
+let counter = 0;
+for (let i = 0; i < favoriteFoods.length; i += 1) {
     if (favoriteFoods[i].charAt(0) == "c") {
         counter++;
     }

@@ -2,22 +2,22 @@
 
 
 // double quotes
-var kivansag = "Jóétvágyat, Andi!";
+const kivansag = "Jóétvágyat, Andi!";
 // single quotes
-var kivansag2 = 'Jóétvágyat, Máté!';
+const kivansag2 = 'Jóétvágyat, Máté!';
 
 // Létezik többsoros string is.
 // Erre az úgynevezett backtick-et használjuk. Ez a karakter: `
-var uzenet = ` Szia
+const uzenet = ` Szia
                     Mi a helyzet?
 
                     BR,
                     Máté `;
 
-var nev = "Bence";
-var mondat = "A nevem " + nev + ". Érted, hogy " + nev + "?";
+const nev = "Bence";
+let mondat = "A nevem " + nev + ". Érted, hogy " + nev + "?";
 console.log(mondat)
 
 // string template
-var mondat2 = `A nevem ${nev}. Érted, hogy ${nev}?`
+let mondat2 = `A nevem ${nev}. Érted, hogy ${nev}?`
 console.log(mondat2)

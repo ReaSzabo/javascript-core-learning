@@ -1,7 +1,6 @@
-// #6
-// What would we see on the console? Disco, Party, Disco, Party Disco
+// What would we see on the console? Disco, Party, Disco, Party, Disco
 
-var codes = ["D", "P", "D", "P", "D", "Party"];
+const codes = ["D", "P", "D", "P", "D", "Party"];
 
 for (var i = 0; i < codes.length; i++) {
     switch (codes[i]) {

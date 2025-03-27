@@ -35,6 +35,8 @@ console.log(sum);
 
 
 
+
+
 console.log("Exercise #7");
 // Write a program to find sum of all even numbers between 1 to 10.
 
@@ -47,6 +49,9 @@ for (let i = 1; i < 11; i++) {
 }
 
 console.log(evenSum);
+
+
+
 
 
 console.log("Exercise #8");
@@ -62,6 +67,9 @@ for (let i = 10; i < 101; i++) {
 
 console.log(oddSum);
 
+
+
+
 console.log("Exercise #9");
 // Írd ki a három többszöröseit 30 alatt! (3, 6, 9, 12, 15 ...)
 // (Egy szám a 3 többszöröse, ha elosztva 3-mal a maradék 0.)
@@ -74,12 +82,17 @@ for (let i = 0; i < 31; i++) {
 
 
 
+
+
 console.log("Exercise #10");
 // Írd ki 12-szer a csillag karaktert külön sorokba!
 
 for (let i = 0; i < 12; i++) {
     console.log("*");
 }
+
+
+
 
 
 console.log("Exercise #11");
@@ -98,6 +111,7 @@ console.log(tombocske2);
 
 
 
+
 console.log("Exercise #12");
 // Írd ki a tömb azon elemeit, amelyek párosak!
 var tombocske2 = [200, 300, 333, 411, 12, 2, 32, 33, 41, 39, 10];
@@ -107,6 +121,9 @@ for (let i = 0; i < tombocske2.length; i++) {
         console.log(tombocske2[i]);
     }
 }
+
+
+
 
 
 console.log("Exercise #13");

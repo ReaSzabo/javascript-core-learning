@@ -6,5 +6,14 @@ class Food {
     color = null;
     isHomemade = null;
 
+    getCaloriest() {
+        return this.calories;
+    }
+
+    setCalories() {
+        this.calories = 1000;
+    }
+
+
 
 }

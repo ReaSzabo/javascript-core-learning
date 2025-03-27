@@ -1,8 +1,7 @@
-// #4
 // What would we see on the console?
 // Answer: 3
 
-var personWeight = 85;
+let personWeight = 85;
 
 switch (personWeight) {
     case 85.5:

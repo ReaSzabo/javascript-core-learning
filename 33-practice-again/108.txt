@@ -1,0 +1,30 @@
+What are the types in Javascript?
+-string
+-number
+-boolean
+-bigint
+-undefined
+-null
+-symbol
+-object - object, array, function
+
+
+What is the difference between "==" and "==="?
+== checks only the values
+=== checks tha values and the types too
+
+
+What are the falsy values in JavaScript? 
+-NaN
+-null
+-undefined
+-false
+-""
+-0
+-(-0)
+-bigint 0
+
+Hogy hivatkozunk egy külső CSS stíluslapra (external style sheet)?
+
+<link rel="stylesheet" href="valami.css">
+

@@ -1,13 +1,14 @@
 // Számold meg a true értékeket a tömbben.
 
-var szamlalo = 0;
-var dontesek = [true, false, true, true, false, true, false, true, false];
+let szamlalo = 0;
+const dontesek = [true, false, true, true, false, true, false, true, false];
 
 
 for (let i = 0; i < dontesek.length; i++) {
-    if (dontesek[i] == true) {
+    if (dontesek[i]) {
         szamlalo++;
     }
 }
+
 
 console.log(szamlalo);

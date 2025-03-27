@@ -1,4 +1,4 @@
-var topanka = {
+let topanka = {
     size: 38,
     color: "black",
     material: "leather",

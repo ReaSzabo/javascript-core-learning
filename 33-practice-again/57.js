@@ -1,7 +1,7 @@
 // #1
 // Create a switch statement from the following if statement
 
-var favoriteDay = "Monday";
+let favoriteDay = "Monday";
 
 if (favoriteDay == "Monday") {
     console.log("Their favorite day is Monday.");

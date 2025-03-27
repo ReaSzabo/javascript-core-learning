@@ -1,12 +1,12 @@
-// What would we see on the console? 1
+// What would we see on the console? - 1
 
-var sentenceString = "this is a nice day";
+let sentenceString = "this is a nice day";
 
-var sentenceArray = sentenceString.split(" ");
+let sentenceArray = sentenceString.split(" ");
 
 sentenceArray[4] = sentenceArray[4].replaceAll("y", "te");
 
-var word = "   date    ";
+let word = "   date    ";
 
 if (word.trim() == sentenceArray[4]) {
     console.log("1")

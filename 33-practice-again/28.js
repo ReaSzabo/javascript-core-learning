@@ -6,7 +6,7 @@
 // Az objectum a JavaScript nyelvben egy Map, azaz kulcs-érték párok gyűjteménye.
 // Ezeket a kulcs-érték párokat property-nek (tulajdon) nevezzük.
 
-var doggy = {
+let doggy = {
     age: 2,
     hasClothes: true,
     isDangerous: false,

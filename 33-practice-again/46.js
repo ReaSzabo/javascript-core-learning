@@ -1,10 +1,23 @@
 // Cseréld ki a változók értékét (nem kell függvényt írnod)
-var a = 10;
-var b = 20;
+let a = 10;
+let b = 20;
 
-var c = a;
+/*let c = a;
 a = b;
-b = c;
+b = c;*/
+
+[a, b] = [b, a]
 
 console.log(a);
 console.log(b);
+
+
+// ez működik minden nyelven:
+
+let x = 5;
+let y = 4;
+x = x + y;
+y = x - y;
+x = x - y;
+console.log('x', x);
+console.log('y', y);

@@ -14,3 +14,16 @@ let kocsi2 = {
   price: 5400000,
   isNew: true
 }
+
+isNew = (obj) => {
+  if (obj.isNew == true) {
+    console.log("The " + obj.brand + " " + obj.type + " is new.")
+  } else {
+    console.log("The " + obj.brand + " " + obj.type + " is not new.")
+  }
+}
+
+// a function-t, ne tedd bele a függvény nevébe (de ez csak apróság)
+
+isNew(kocsi1);
+isNew(kocsi2);

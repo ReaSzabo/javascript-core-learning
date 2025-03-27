@@ -2,12 +2,18 @@
 // Teszteld legalább egy console.log-gal!
 
 
-biggerNumber = (x, y) => {
+/*biggerNumber = (x, y) => {
     if (x > y) {
         return x;
     }
 
     return y;
+}*/
+
+
+biggerNumber = (x, y) => {
+    return x > y ? x : y;
 }
+
 
 console.log(biggerNumber(15, 20));

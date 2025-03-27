@@ -1,6 +1,6 @@
 // What would we see on the console? 4
 
-var foods = ["hamburger", "pizza", "pasta"];
+const foods = ["hamburger", "pizza", "pasta"];
 foods.push("fish");
 
 switch (foods[foods.length - 1]) {
