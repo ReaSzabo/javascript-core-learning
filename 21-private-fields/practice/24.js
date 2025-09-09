@@ -22,7 +22,7 @@ function arrayOrder(arr) {
     return arr;
 }
 
-let tombi = [3, 2, 4, 98, 100, 53, 43, 3];
+let tombi = [85, 3, 2, 4, 98, 100, 53, 43, 3, -1];
 
 
 

@@ -1,0 +1,52 @@
+Here are some hackerrank examples.
+You do not need to push the code to the repository, use only hackerrank.com.
+
+Log in to your account. If you already solved this excersises then simply skip them.
+
+    HACKERRANK:
+
+1. Solve me first:
+https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true
+
+2. Simple array:
+https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true
+
+3. Compare triplets:
+https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true
+
+4. A very big sum:
+https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true
+
+5. Plus minus:
+https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
+
+6. Apple and Orange
+https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true
+
+7. Birthday Cake Candles
+https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true
+
+8. Diagonal Difference
+https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true
+
+9. Staircase
+https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
+
+Mini-Max Sum
+https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true
+
+https://www.hackerrank.com/challenges/arrays-ds/problem?isFullScreen=true
+
+Time Conversion
+https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true
+
+Grading Students
+https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true
+
+https://leetcode.com/problems/two-sum/description/
+
+Time Conversion
+https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true
+
+Grading Students
+https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true
